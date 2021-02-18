@@ -22,12 +22,11 @@
 # -- Compiling entity pr4
 # -- Compiling architecture structure of pr4
 # 
-# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht}
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/4/simulation/modelsim/pr4.vht}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
 # -- Compiling entity pr4_vhd_tst
 # -- Compiling architecture pr4_arch of pr4_vhd_tst
 # 
@@ -36,7 +35,6 @@
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
 # Loading work.pr4_vhd_tst(pr4_arch)
 # SDF 10.1d Compiler 2012.11 Nov  2 2012
 # 
@@ -54,7 +52,7 @@
 # Loading instances from pr4_vhd.sdo
 # Loading timing data from pr4_vhd.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /pr4_vhd_tst File: C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht
+#    Time: 0 ps  Iteration: 0  Instance: /pr4_vhd_tst File: C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/4/simulation/modelsim/pr4.vht
 # 
 # add wave *
 # view structure
@@ -62,8 +60,3 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Failure: fallo en la comparacion a<b
-#    Time: 1900 ns  Iteration: 0  Process: /pr4_vhd_tst/always File: C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht
-# Break in ForLoop loop at C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht line 128
-# Simulation Breakpoint: Break in ForLoop loop at C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht line 128
-# MACRO ./pr4_run_msim_gate_vhdl.do PAUSED at line 17
