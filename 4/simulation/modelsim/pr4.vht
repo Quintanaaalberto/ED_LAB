@@ -25,7 +25,8 @@
 -- 
 
 LIBRARY ieee;                                               
-USE ieee.std_logic_1164.all;                                
+USE ieee.std_logic_1164.all;  
+USE ieee.numeric_std.all;                              
 
 ENTITY pr4_vhd_tst IS
 END pr4_vhd_tst;
@@ -73,7 +74,30 @@ always : PROCESS
 -- (        )                                                 
 -- variable declarations                                      
 BEGIN                                                         
-        -- code executes for every event on sensitivity list  
+        -- code executes for every event on sensitivity list
+		  for i in 0 to 15 loop
+				a <= std_logic_vector(to_unsigned(i, 4));
+				for j in 0 to 15 loop
+					b <= std_logic_vector(to_unsigned(j, 4));
+					wait for 100 ns;
+					if a = b then
+						assert Aequal = '1' and Asmaller = '0' and Abigger = '0'
+							report "fallo en la comparacion a=b"
+							severity failure;
+					end if;
+					if a < b then
+						assert Aequal = '0' and Asmaller = '1' and Abigger = '0'
+							report "fallo en la comparacion a<b"
+							severity failure;
+					end if;
+					if a > b then
+						assert Aequal = '0' and Asmaller = '0' and Abigger = '1'
+							report "fallo en la comparacion a>b"
+							severity failure;
+					end if;
+				end loop;
+			end loop;
+		  
 WAIT;                                                        
 END PROCESS always;                                          
 END pr4_arch;
