@@ -19,8 +19,8 @@ begin
 	aa <= An;
 	bb <= Bn;
 
-	abigger <= '1' when  a > b else '0';
-	asmaller <= '1' when a < b else '0';
-	aequal <= '1' when a = b else '0';
+	abigger <= '1' when  An > Bn else '0';
+	asmaller <= '1' when An < Bn else '0';
+	aequal <= '1' when An = Bn else '0';
 
 end  Comparador4Bits_arc;
