@@ -1,0 +1,69 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do pr4_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {pr4.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
+# -- Compiling entity pr4
+# -- Compiling architecture structure of pr4
+# 
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pr4_vhd_tst
+# -- Compiling architecture pr4_arch of pr4_vhd_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /i1=pr4_vhd.sdo -L cycloneii -L gate_work -L work -voptargs="+acc"  pr4_vhd_tst
+# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /i1=pr4_vhd.sdo -t 1ps pr4_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.pr4_vhd_tst(pr4_arch)
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.pr4(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# Loading instances from pr4_vhd.sdo
+# Loading timing data from pr4_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /pr4_vhd_tst File: C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Failure: fallo en la comparacion a<b
+#    Time: 1900 ns  Iteration: 0  Process: /pr4_vhd_tst/always File: C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht
+# Break in ForLoop loop at C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht line 128
+# Simulation Breakpoint: Break in ForLoop loop at C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht line 128
+# MACRO ./pr4_run_msim_gate_vhdl.do PAUSED at line 17

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\quint\OneDrive\Documents\ICAI\ICAI_ElectronicaDigital\Pr4\simulation\modelsim
+Epr4
+Z1 w1613500951
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx9 cycloneii 19 cycloneii_atom_pack 0 22 zUjlM<IUJVWSWg:L2<>ic3
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 DPx9 cycloneii 20 cycloneii_components 0 22 h@gSJ;Al32oYg[7^PbnAR0
+Z8 dC:\Users\quint\OneDrive\Documents\ICAI\ICAI_ElectronicaDigital\Pr4\simulation\modelsim
+Z9 8pr4.vho
+Z10 Fpr4.vho
+l0
+L34
+V_31`SSEHTGL@R6>9S^_Un2
+Z11 OV;C;10.1d;51
+31
+Z12 !s108 1613502461.412000
+Z13 !s90 -reportprogress|300|-93|-work|work|pr4.vho|
+Z14 !s107 pr4.vho|
+Z15 o-93 -work work -O0
+Z16 tExplicit 1
+!s100 mg^lE0Q3Dm260KoY9kKl?3
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 3 pr4 0 22 _31`SSEHTGL@R6>9S^_Un2
+l161
+L92
+V>E12oDgk^YSSi^<4_QEk@2
+R11
+31
+R12
+R13
+R14
+R15
+R16
+!s100 k?<<:z?h5Ji>eIA>n3[KH1
+!i10b 1
+Epr4_vhd_tst
+Z17 w1613502398
+Z18 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R5
+R6
+R8
+Z19 8C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht
+Z20 FC:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht
+l0
+L31
+VOnUW5<1>X6i46HK8X4bLN1
+!s100 S4g2d]nec8cnbdncmPd8Z1
+R11
+31
+!i10b 1
+Z21 !s108 1613502461.632000
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht|
+Z23 !s107 C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/Pr4/simulation/modelsim/pr4.vht|
+R15
+R16
+Apr4_arch
+R18
+R5
+R6
+DEx4 work 11 pr4_vhd_tst 0 22 OnUW5<1>X6i46HK8X4bLN1
+l73
+L33
+V`8BT;kz?TnzWh<VB@iZo43
+!s100 4;ZZUVDijKEfB4fYVaTTe1
+R11
+31
+!i10b 1
+R21
+R22
+R23
+R15
+R16
