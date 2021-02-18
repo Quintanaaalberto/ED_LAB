@@ -6,21 +6,18 @@ use ieee.math_real.all;                 -- for the ceiling and log constant calc
 
 entity pr4 is
 	port (
-		A0,A1,A2,A3 : in std_logic;
-		B0,B1,B2,B3 : in std_logic;
+		a , b : in std_logic_vector(3 downto 0);
 		Abigger, Asmaller, Aequal : out std_logic;
-		aa, ab, ac, ad, ae, af, ag : out std_logic;
-		ba, bb, bc, bd, be, bf, bg : out std_logic
+		d_a, d_b : out std_logic_vector(6 downto 0)
 	);
 end ;
 
 architecture pr4_arc of pr4 is
 
-	signal da, db : std_logic_vector (6 downto 0);
 
 	component Comparador4Bits
 		port(
-				A, B : in std_logic_vector (3 downto 0);
+				An, Bn : in std_logic_vector (3 downto 0);
 				abigger, asmaller, aequal : out std_logic);
 
 	end component;
@@ -39,31 +36,13 @@ begin
 
 	i1: Comparador4Bits
 		port map (
-			A => A0&A1&A2&A3, B => B0&B1&B2&B3, abigger => Abigger, asmaller => Asmaller, aequal => Aequal );
+			An => a, Bn => b, abigger => Abigger, asmaller => Asmaller, aequal => Aequal );
 	i2: BinA7Seg
 		port map (
-			N => A0&A1&A2&A3, Display => da);
+			N => a, Display => d_a);
 	i3: BinA7Seg
 		port map (
-			N => B0&B1&B2&B3, Display => db);
-
-	aa <= da(6);
-	ab <= da(5);
-	ac <= da(4);
-	ad <= da(3);
-	ae <= da(2);
-	af <= da(1);
-	ag <= da(0);
-
-	ba <= db(6);
-	bb <= db(5);
-	bc <= db(4);
-	bd <= db(3);
-	be <= db(2);
-	bf <= db(1);
-	bg <= db(0);
-
-
+			N => b, Display => d_b);
 
 
 end pr4_arc;

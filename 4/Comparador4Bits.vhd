@@ -5,7 +5,7 @@ use ieee.numeric_std.all;               -- for type conversions
 
 entity Comparador4Bits is
 	port(
-				A, B : in std_logic_vector (3 downto 0);
+				An, Bn : in std_logic_vector (3 downto 0);
 				abigger, asmaller, aequal : out std_logic);
 end Comparador4Bits;
 
@@ -16,8 +16,8 @@ architecture Comparador4Bits_arc of Comparador4Bits is
 
 begin
 	
-	aa <= A;
-	bb <= B;
+	aa <= An;
+	bb <= Bn;
 
 	abigger <= '1' when  a > b else '0';
 	asmaller <= '1' when a < b else '0';
