@@ -1,0 +1,223 @@
+|Pr5
+An[0] => Sumador5Bits:i_Sumador5Bits.a[0]
+An[1] => Sumador5Bits:i_Sumador5Bits.a[1]
+An[2] => Sumador5Bits:i_Sumador5Bits.a[2]
+An[3] => Sumador5Bits:i_Sumador5Bits.a[3]
+An[4] => Sumador5Bits:i_Sumador5Bits.a[4]
+Bn[0] => Sumador5Bits:i_Sumador5Bits.b[0]
+Bn[1] => Sumador5Bits:i_Sumador5Bits.b[1]
+Bn[2] => Sumador5Bits:i_Sumador5Bits.b[2]
+Bn[3] => Sumador5Bits:i_Sumador5Bits.b[3]
+Bn[4] => Sumador5Bits:i_Sumador5Bits.b[4]
+disp1[0] <= BinA7Seg:i_disp1.Display[0]
+disp1[1] <= BinA7Seg:i_disp1.Display[1]
+disp1[2] <= BinA7Seg:i_disp1.Display[2]
+disp1[3] <= BinA7Seg:i_disp1.Display[3]
+disp1[4] <= BinA7Seg:i_disp1.Display[4]
+disp1[5] <= BinA7Seg:i_disp1.Display[5]
+disp1[6] <= BinA7Seg:i_disp1.Display[6]
+disp2[0] <= BinA7Seg:i_disp2.Display[0]
+disp2[1] <= BinA7Seg:i_disp2.Display[1]
+disp2[2] <= BinA7Seg:i_disp2.Display[2]
+disp2[3] <= BinA7Seg:i_disp2.Display[3]
+disp2[4] <= BinA7Seg:i_disp2.Display[4]
+disp2[5] <= BinA7Seg:i_disp2.Display[5]
+disp2[6] <= BinA7Seg:i_disp2.Display[6]
+carry <= Sumador5Bits:i_Sumador5Bits.c_out
+
+
+|Pr5|Sumador5Bits:i_Sumador5Bits
+a[0] => Sumador1Bit:GenSum:0:i_Sumador1Bit.a_i
+a[1] => Sumador1Bit:GenSum:1:i_Sumador1Bit.a_i
+a[2] => Sumador1Bit:GenSum:2:i_Sumador1Bit.a_i
+a[3] => Sumador1Bit:GenSum:3:i_Sumador1Bit.a_i
+a[4] => Sumador1Bit:GenSum:4:i_Sumador1Bit.a_i
+b[0] => Sumador1Bit:GenSum:0:i_Sumador1Bit.b_i
+b[1] => Sumador1Bit:GenSum:1:i_Sumador1Bit.b_i
+b[2] => Sumador1Bit:GenSum:2:i_Sumador1Bit.b_i
+b[3] => Sumador1Bit:GenSum:3:i_Sumador1Bit.b_i
+b[4] => Sumador1Bit:GenSum:4:i_Sumador1Bit.b_i
+s[0] <= Sumador1Bit:GenSum:0:i_Sumador1Bit.s_i
+s[1] <= Sumador1Bit:GenSum:1:i_Sumador1Bit.s_i
+s[2] <= Sumador1Bit:GenSum:2:i_Sumador1Bit.s_i
+s[3] <= Sumador1Bit:GenSum:3:i_Sumador1Bit.s_i
+s[4] <= Sumador1Bit:GenSum:4:i_Sumador1Bit.s_i
+c_out <= CarryLookAhead:i_CarryLookAhead.c[5]
+
+
+|Pr5|Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:0:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => g_i.IN0
+b_i => s_i.IN1
+b_i => g_i.IN1
+c_i => s_i.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+p_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+g_i <= g_i.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pr5|Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:1:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => g_i.IN0
+b_i => s_i.IN1
+b_i => g_i.IN1
+c_i => s_i.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+p_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+g_i <= g_i.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pr5|Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:2:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => g_i.IN0
+b_i => s_i.IN1
+b_i => g_i.IN1
+c_i => s_i.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+p_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+g_i <= g_i.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pr5|Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:3:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => g_i.IN0
+b_i => s_i.IN1
+b_i => g_i.IN1
+c_i => s_i.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+p_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+g_i <= g_i.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pr5|Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:4:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => g_i.IN0
+b_i => s_i.IN1
+b_i => g_i.IN1
+c_i => s_i.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+p_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+g_i <= g_i.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pr5|Sumador5Bits:i_Sumador5Bits|CarryLookAhead:i_CarryLookAhead
+g[0] => c.IN1
+g[0] => c.IN0
+g[0] => c.IN1
+g[0] => c.IN1
+g[0] => c.IN1
+g[1] => c.IN1
+g[1] => c.IN0
+g[1] => c.IN1
+g[1] => c.IN1
+g[2] => c.IN1
+g[2] => c.IN0
+g[2] => c.IN1
+g[3] => c.IN1
+g[3] => c.IN0
+g[4] => c.IN1
+p[0] => c.IN0
+p[0] => c.IN0
+p[0] => c.IN1
+p[0] => c.IN1
+p[0] => c.IN1
+p[1] => c.IN1
+p[1] => c.IN1
+p[1] => c.IN0
+p[1] => c.IN1
+p[1] => c.IN1
+p[2] => c.IN1
+p[2] => c.IN1
+p[2] => c.IN0
+p[2] => c.IN1
+p[3] => c.IN1
+p[3] => c.IN1
+p[3] => c.IN0
+p[4] => c.IN1
+p[4] => c.IN1
+c_0 => c.IN1
+c_0 => c.IN1
+c_0 => c.IN1
+c_0 => c.IN1
+c_0 => c.IN1
+c[1] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[5] <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pr5|BinA7Seg:i_disp1
+N[0] => Mux0.IN19
+N[0] => Mux1.IN19
+N[0] => Mux2.IN19
+N[0] => Mux3.IN19
+N[0] => Mux4.IN19
+N[0] => Mux5.IN19
+N[1] => Mux0.IN18
+N[1] => Mux1.IN18
+N[1] => Mux2.IN18
+N[1] => Mux3.IN18
+N[1] => Mux4.IN18
+N[1] => Mux5.IN18
+N[1] => Mux6.IN10
+N[2] => Mux0.IN17
+N[2] => Mux1.IN17
+N[2] => Mux2.IN17
+N[2] => Mux3.IN17
+N[2] => Mux4.IN17
+N[2] => Mux5.IN17
+N[2] => Mux6.IN9
+N[3] => Mux0.IN16
+N[3] => Mux1.IN16
+N[3] => Mux2.IN16
+N[3] => Mux3.IN16
+N[3] => Mux4.IN16
+N[3] => Mux5.IN16
+N[3] => Mux6.IN8
+Display[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Display[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pr5|BinA7Seg:i_disp2
+N[0] => Mux0.IN19
+N[0] => Mux1.IN19
+N[0] => Mux2.IN19
+N[0] => Mux3.IN19
+N[0] => Mux4.IN19
+N[0] => Mux5.IN19
+N[1] => Mux0.IN18
+N[1] => Mux1.IN18
+N[1] => Mux2.IN18
+N[1] => Mux3.IN18
+N[1] => Mux4.IN18
+N[1] => Mux5.IN18
+N[1] => Mux6.IN10
+N[2] => Mux0.IN17
+N[2] => Mux1.IN17
+N[2] => Mux2.IN17
+N[2] => Mux3.IN17
+N[2] => Mux4.IN17
+N[2] => Mux5.IN17
+N[2] => Mux6.IN9
+N[3] => Mux0.IN16
+N[3] => Mux1.IN16
+N[3] => Mux2.IN16
+N[3] => Mux3.IN16
+N[3] => Mux4.IN16
+N[3] => Mux5.IN16
+N[3] => Mux6.IN8
+Display[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Display[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
