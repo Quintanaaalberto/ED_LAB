@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Pr5
-Tue Feb 23 19:24:11 2021
+Wed Feb 24 20:40:19 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,11 +14,10 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "BinA7Seg:i_disp2"
- 10. Port Connectivity Checks: "Sumador5Bits:i_Sumador5Bits|CarryLookAhead:i_CarryLookAhead"
- 11. Port Connectivity Checks: "Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:0:i_Sumador1Bit"
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "CarryLookAhead:i_CarryLookAhead"
+ 10. Port Connectivity Checks: "Sumador1Bit:\GenSum:0:i_Sumador1Bit"
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -44,16 +43,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 23 19:24:11 2021           ;
+; Analysis & Synthesis Status        ; Successful - Wed Feb 24 20:40:19 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Pr5                                             ;
-; Top-level Entity Name              ; Pr5                                             ;
+; Top-level Entity Name              ; Sumador5Bits                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 26                                              ;
-;     Total combinational functions  ; 26                                              ;
+; Total logic elements               ; 15                                              ;
+;     Total combinational functions  ; 15                                              ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 25                                              ;
+; Total pins                         ; 16                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -67,7 +66,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C20F484C7       ;                    ;
-; Top-level entity name                                                      ; Pr5                ; Pr5                ;
+; Top-level entity name                                                      ; Sumador5Bits       ; Pr5                ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -164,58 +163,53 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
 ; Sumador1Bit.vhd                  ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/5/Sumador1Bit.vhd    ;         ;
 ; Sumador5Bits.vhd                 ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/5/Sumador5Bits.vhd   ;         ;
-; Pr5.vhd                          ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/5/Pr5.vhd            ;         ;
 ; carrylookahead.vhd               ; yes             ; Auto-Found VHDL File  ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/5/carrylookahead.vhd ;         ;
-; bina7seg.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/5/bina7seg.vhd       ;         ;
 +----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                       ;
-+---------------------------------------------+---------------------------------------------------------------------+
-; Resource                                    ; Usage                                                               ;
-+---------------------------------------------+---------------------------------------------------------------------+
-; Estimated Total logic elements              ; 26                                                                  ;
-;                                             ;                                                                     ;
-; Total combinational functions               ; 26                                                                  ;
-; Logic element usage by number of LUT inputs ;                                                                     ;
-;     -- 4 input functions                    ; 20                                                                  ;
-;     -- 3 input functions                    ; 3                                                                   ;
-;     -- <=2 input functions                  ; 3                                                                   ;
-;                                             ;                                                                     ;
-; Logic elements by mode                      ;                                                                     ;
-;     -- normal mode                          ; 26                                                                  ;
-;     -- arithmetic mode                      ; 0                                                                   ;
-;                                             ;                                                                     ;
-; Total registers                             ; 0                                                                   ;
-;     -- Dedicated logic registers            ; 0                                                                   ;
-;     -- I/O registers                        ; 0                                                                   ;
-;                                             ;                                                                     ;
-; I/O pins                                    ; 25                                                                  ;
-; Embedded Multiplier 9-bit elements          ; 0                                                                   ;
-; Maximum fan-out node                        ; Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:1:i_Sumador1Bit|s_i ;
-; Maximum fan-out                             ; 7                                                                   ;
-; Total fan-out                               ; 109                                                                 ;
-; Average fan-out                             ; 2.14                                                                ;
-+---------------------------------------------+---------------------------------------------------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 15    ;
+;                                             ;       ;
+; Total combinational functions               ; 15    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 10    ;
+;     -- 3 input functions                    ; 3     ;
+;     -- <=2 input functions                  ; 2     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 15    ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 16    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; a[0]  ;
+; Maximum fan-out                             ; 5     ;
+; Total fan-out                               ; 59    ;
+; Average fan-out                             ; 1.90  ;
++---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                           ;
-+---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Library Name ;
-+---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+
-; |Pr5                                        ; 26 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |Pr5                                                                 ; work         ;
-;    |BinA7Seg:i_disp1|                       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pr5|BinA7Seg:i_disp1                                                ; work         ;
-;    |BinA7Seg:i_disp2|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pr5|BinA7Seg:i_disp2                                                ; work         ;
-;    |Sumador5Bits:i_Sumador5Bits|            ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pr5|Sumador5Bits:i_Sumador5Bits                                     ; work         ;
-;       |CarryLookAhead:i_CarryLookAhead|     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pr5|Sumador5Bits:i_Sumador5Bits|CarryLookAhead:i_CarryLookAhead     ; work         ;
-;       |Sumador1Bit:\GenSum:0:i_Sumador1Bit| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pr5|Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:0:i_Sumador1Bit ; work         ;
-;       |Sumador1Bit:\GenSum:1:i_Sumador1Bit| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pr5|Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:1:i_Sumador1Bit ; work         ;
-;       |Sumador1Bit:\GenSum:2:i_Sumador1Bit| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pr5|Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:2:i_Sumador1Bit ; work         ;
-;       |Sumador1Bit:\GenSum:3:i_Sumador1Bit| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pr5|Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:3:i_Sumador1Bit ; work         ;
-;       |Sumador1Bit:\GenSum:4:i_Sumador1Bit| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pr5|Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:4:i_Sumador1Bit ; work         ;
-+---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                     ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
+; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                               ; Library Name ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
+; |Sumador5Bits                            ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |Sumador5Bits                                     ; work         ;
+;    |CarryLookAhead:i_CarryLookAhead|     ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sumador5Bits|CarryLookAhead:i_CarryLookAhead     ; work         ;
+;    |Sumador1Bit:\GenSum:0:i_Sumador1Bit| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sumador5Bits|Sumador1Bit:\GenSum:0:i_Sumador1Bit ; work         ;
+;    |Sumador1Bit:\GenSum:1:i_Sumador1Bit| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sumador5Bits|Sumador1Bit:\GenSum:1:i_Sumador1Bit ; work         ;
+;    |Sumador1Bit:\GenSum:2:i_Sumador1Bit| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sumador5Bits|Sumador1Bit:\GenSum:2:i_Sumador1Bit ; work         ;
+;    |Sumador1Bit:\GenSum:3:i_Sumador1Bit| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sumador5Bits|Sumador1Bit:\GenSum:3:i_Sumador1Bit ; work         ;
+;    |Sumador1Bit:\GenSum:4:i_Sumador1Bit| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sumador5Bits|Sumador1Bit:\GenSum:4:i_Sumador1Bit ; work         ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -234,31 +228,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------+
-; Port Connectivity Checks: "BinA7Seg:i_disp2" ;
-+---------+-------+----------+-----------------+
-; Port    ; Type  ; Severity ; Details         ;
-+---------+-------+----------+-----------------+
-; n[3..2] ; Input ; Info     ; Stuck at GND    ;
-+---------+-------+----------+-----------------+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "CarryLookAhead:i_CarryLookAhead" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; c_0  ; Input ; Info     ; Stuck at GND                      ;
++------+-------+----------+-----------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Sumador5Bits:i_Sumador5Bits|CarryLookAhead:i_CarryLookAhead" ;
-+------+-------+----------+---------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                       ;
-+------+-------+----------+---------------------------------------------------------------+
-; c_0  ; Input ; Info     ; Stuck at GND                                                  ;
-+------+-------+----------+---------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:0:i_Sumador1Bit" ;
-+------+-------+----------+-------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                           ;
-+------+-------+----------+-------------------------------------------------------------------+
-; c_i  ; Input ; Info     ; Stuck at GND                                                      ;
-+------+-------+----------+-------------------------------------------------------------------+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "Sumador1Bit:\GenSum:0:i_Sumador1Bit" ;
++------+-------+----------+---------------------------------------+
+; Port ; Type  ; Severity ; Details                               ;
++------+-------+----------+---------------------------------------+
+; c_i  ; Input ; Info     ; Stuck at GND                          ;
++------+-------+----------+---------------------------------------+
 
 
 +-------------------------------+
@@ -276,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Feb 23 19:24:06 2021
+    Info: Processing started: Wed Feb 24 20:40:18 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Pr5 -c Pr5
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file sumador1bit.vhd
@@ -288,29 +273,22 @@ Info (12021): Found 2 design units, including 1 entities, in source file sumador
 Info (12021): Found 2 design units, including 1 entities, in source file pr5.vhd
     Info (12022): Found design unit 1: Pr5-Structural
     Info (12023): Found entity 1: Pr5
-Info (12127): Elaborating entity "Pr5" for the top level hierarchy
-Info (12128): Elaborating entity "Sumador5Bits" for hierarchy "Sumador5Bits:i_Sumador5Bits"
-Info (12128): Elaborating entity "Sumador1Bit" for hierarchy "Sumador5Bits:i_Sumador5Bits|Sumador1Bit:\GenSum:0:i_Sumador1Bit"
+Info (12127): Elaborating entity "Sumador5Bits" for the top level hierarchy
+Info (12128): Elaborating entity "Sumador1Bit" for hierarchy "Sumador1Bit:\GenSum:0:i_Sumador1Bit"
 Warning (12125): Using design file carrylookahead.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: CarryLookAhead-CarryLookAhead_arc
     Info (12023): Found entity 1: CarryLookAhead
-Info (12128): Elaborating entity "CarryLookAhead" for hierarchy "Sumador5Bits:i_Sumador5Bits|CarryLookAhead:i_CarryLookAhead"
-Warning (12125): Using design file bina7seg.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: BinA7Seg-BinA7Seg_arc
-    Info (12023): Found entity 1: BinA7Seg
-Info (12128): Elaborating entity "BinA7Seg" for hierarchy "BinA7Seg:i_disp1"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "disp2[5]" is stuck at GND
+Info (12128): Elaborating entity "CarryLookAhead" for hierarchy "CarryLookAhead:i_CarryLookAhead"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 51 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 31 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 15 output pins
-    Info (21061): Implemented 26 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4623 megabytes
-    Info: Processing ended: Tue Feb 23 19:24:11 2021
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 15 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4637 megabytes
+    Info: Processing ended: Wed Feb 24 20:40:19 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 
