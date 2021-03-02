@@ -1,0 +1,12 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY Practica6 IS 
+	PORT(
+		a , b : in std_logic_vector(4 downto 0);
+		disp1 , disp2 , disp3 : out std_logic_vector(6 downto 0)
+		);
+END Practica6;
+
+	
