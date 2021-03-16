@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pr7
-Tue Mar 16 19:30:04 2021
+Tue Mar 16 20:22:10 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,13 +44,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 16 19:30:04 2021           ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 16 20:22:10 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pr7                                             ;
 ; Top-level Entity Name              ; pr7                                             ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 163                                             ;
-;     Total combinational functions  ; 163                                             ;
+; Total logic elements               ; 162                                             ;
+;     Total combinational functions  ; 162                                             ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 29                                              ;
@@ -157,24 +157,24 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                    ;
-+----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                       ; Library ;
-+----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------+---------+
-; pr7.vhd                          ; yes             ; User VHDL File        ; C:/Users/ferna/Documents/GitHub/ED_LAB/7/pr7.vhd                   ;         ;
-; alu.vhd                          ; yes             ; User VHDL File        ; C:/Users/ferna/Documents/GitHub/ED_LAB/7/alu.vhd                   ;         ;
-; U_Func_Log.vhd                   ; yes             ; User VHDL File        ; C:/Users/ferna/Documents/GitHub/ED_LAB/7/U_Func_Log.vhd            ;         ;
-; Sumador1Bit.vhd                  ; yes             ; User VHDL File        ; C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador1Bit.vhd           ;         ;
-; Sumador_Restador5bits.vhd        ; yes             ; User VHDL File        ; C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador_Restador5bits.vhd ;         ;
-; mux5bits3to1.vhd                 ; yes             ; User VHDL File        ; C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits3to1.vhd          ;         ;
-; mux5bits.vhd                     ; yes             ; User VHDL File        ; C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits.vhd              ;         ;
-; mux.vhd                          ; yes             ; User VHDL File        ; C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux.vhd                   ;         ;
-; Multiplicador5Bits_C2.vhd        ; yes             ; User VHDL File        ; C:/Users/ferna/Documents/GitHub/ED_LAB/7/Multiplicador5Bits_C2.vhd ;         ;
-; Control.vhd                      ; yes             ; User VHDL File        ; C:/Users/ferna/Documents/GitHub/ED_LAB/7/Control.vhd               ;         ;
-; CarryLookAhead.vhd               ; yes             ; User VHDL File        ; C:/Users/ferna/Documents/GitHub/ED_LAB/7/CarryLookAhead.vhd        ;         ;
-; bina7seg_dec.vhd                 ; yes             ; Auto-Found VHDL File  ; C:/Users/ferna/Documents/GitHub/ED_LAB/7/bina7seg_dec.vhd          ;         ;
-+----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                    ; Library ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------------------------------------+---------+
+; pr7.vhd                          ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/pr7.vhd                   ;         ;
+; alu.vhd                          ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/alu.vhd                   ;         ;
+; U_Func_Log.vhd                   ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/U_Func_Log.vhd            ;         ;
+; Sumador1Bit.vhd                  ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador1Bit.vhd           ;         ;
+; Sumador_Restador5bits.vhd        ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador_Restador5bits.vhd ;         ;
+; mux5bits3to1.vhd                 ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux5bits3to1.vhd          ;         ;
+; mux5bits.vhd                     ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux5bits.vhd              ;         ;
+; mux.vhd                          ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux.vhd                   ;         ;
+; Multiplicador5Bits_C2.vhd        ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Multiplicador5Bits_C2.vhd ;         ;
+; Control.vhd                      ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Control.vhd               ;         ;
+; CarryLookAhead.vhd               ; yes             ; User VHDL File        ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/CarryLookAhead.vhd        ;         ;
+; bina7seg_dec.vhd                 ; yes             ; Auto-Found VHDL File  ; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/bina7seg_dec.vhd          ;         ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------------+
@@ -182,16 +182,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------------------------------+
 ; Resource                                    ; Usage                             ;
 +---------------------------------------------+-----------------------------------+
-; Estimated Total logic elements              ; 163                               ;
+; Estimated Total logic elements              ; 162                               ;
 ;                                             ;                                   ;
-; Total combinational functions               ; 163                               ;
+; Total combinational functions               ; 162                               ;
 ; Logic element usage by number of LUT inputs ;                                   ;
-;     -- 4 input functions                    ; 59                                ;
-;     -- 3 input functions                    ; 62                                ;
+;     -- 4 input functions                    ; 60                                ;
+;     -- 3 input functions                    ; 60                                ;
 ;     -- <=2 input functions                  ; 42                                ;
 ;                                             ;                                   ;
 ; Logic elements by mode                      ;                                   ;
-;     -- normal mode                          ; 135                               ;
+;     -- normal mode                          ; 134                               ;
 ;     -- arithmetic mode                      ; 28                                ;
 ;                                             ;                                   ;
 ; Total registers                             ; 0                                 ;
@@ -202,7 +202,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0                                 ;
 ; Maximum fan-out node                        ; BinA7Seg_Dec:idisplay|LessThan3~3 ;
 ; Maximum fan-out                             ; 17                                ;
-; Total fan-out                               ; 520                               ;
+; Total fan-out                               ; 518                               ;
 ; Average fan-out                             ; 2.71                              ;
 +---------------------------------------------+-----------------------------------+
 
@@ -212,10 +212,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Library Name ;
 +------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
-; |pr7                                           ; 163 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 29   ; 0            ; |pr7                                                                             ; work         ;
+; |pr7                                           ; 162 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 29   ; 0            ; |pr7                                                                             ; work         ;
 ;    |BinA7Seg_Dec:idisplay|                     ; 57 (57)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pr7|BinA7Seg_Dec:idisplay                                                       ; work         ;
-;    |alu:ialu|                                  ; 106 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pr7|alu:ialu                                                                    ; work         ;
-;       |Control:icontrol|                       ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pr7|alu:ialu|Control:icontrol                                                   ; work         ;
+;    |alu:ialu|                                  ; 105 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pr7|alu:ialu                                                                    ; work         ;
+;       |Control:icontrol|                       ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pr7|alu:ialu|Control:icontrol                                                   ; work         ;
 ;       |Multiplicador5Bits_C2:imultiplicador|   ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pr7|alu:ialu|Multiplicador5Bits_C2:imultiplicador                               ; work         ;
 ;       |Sumador_Restador5Bits:isumador|         ; 22 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pr7|alu:ialu|Sumador_Restador5Bits:isumador                                     ; work         ;
 ;          |CarryLookAhead:i_CarryLookAhead|     ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pr7|alu:ialu|Sumador_Restador5Bits:isumador|CarryLookAhead:i_CarryLookAhead     ; work         ;
@@ -291,7 +291,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -301,7 +301,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Mar 16 19:30:02 2021
+    Info: Processing started: Tue Mar 16 20:22:05 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pr7 -c pr7
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file pr7.vhd
@@ -383,14 +383,14 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "disp2[5]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 192 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 191 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 163 logic cells
+    Info (21061): Implemented 162 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4634 megabytes
-    Info: Processing ended: Tue Mar 16 19:30:04 2021
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4633 megabytes
+    Info: Processing ended: Tue Mar 16 20:22:10 2021
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
 
 

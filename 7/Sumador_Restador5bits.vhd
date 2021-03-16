@@ -17,6 +17,7 @@ architecture Sumador_Restador5Bits_arc of Sumador_Restador5Bits is
 	signal c 	: std_logic_vector (5 downto 0);
 -- generation and spread, g and p
 	signal g, p : std_logic_vector (4 downto 0);
+	signal b_j : std_logic_vector(4 downto 0);
 	
 
 -- now we reference the other blocks used on the hierarchy
@@ -50,11 +51,13 @@ begin
 	c_out <= c(5) xor c(4);
 
 	GenSum : for i in 0 to 4 generate
-
+	
+		b_j(i) <= b(i) xor s_r;
+		
 		i_Sumador1Bit : Sumador1Bit
 		port map (
 			a_i => a(i),
-			b_i => b(i) xor s_r ,
+			b_i => b_j(i),
 			c_i => c(i),
 			s_i => s(i),
 			p_i => p(i),
