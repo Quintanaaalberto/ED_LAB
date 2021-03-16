@@ -1,4 +1,5 @@
 vendor_name = ModelSim
+source_file = 1, C:/Users/ferna/Documents/GitHub/ED_LAB/7/alu.vhd
 source_file = 1, C:/Users/ferna/Documents/GitHub/ED_LAB/7/U_Func_Log.vhd
 source_file = 1, C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador1Bit.vhd
 source_file = 1, C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador_Restador5bits.vhd

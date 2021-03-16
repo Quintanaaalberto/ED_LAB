@@ -60,7 +60,7 @@ architecture alu_arc of  alu is
 	COMPONENT mux5bits3to1
 			PORT(
 				e0, e1, e2 	: in std_logic_vector(4 downto 0);
-				sel			: in std_logic;
+				sel			: in std_logic_vector(1 downto 0);
 				s 			: out std_logic_vector(4 downto 0)
 				);
 		END COMPONENT;
