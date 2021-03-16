@@ -61,7 +61,14 @@ always : PROCESS
 -- (        )                                                 
 -- variable declarations                                      
 BEGIN                                                         
-        -- code executes for every event on sensitivity list  
+     for i in 0 to 31 loop 
+			a <= std_logic_vector(to_unsigned(i,5));
+			for j in 0 to 31 loop
+				b <= std_logic_vector(to_unsigned(j,5));
+				wait for 100ns;
+			end loop;
+		end loop;
+WAIT;                -- code executes for every event on sensitivity list  
 WAIT;                                                        
 END PROCESS always;                                          
 END Multiplicador5Bits_arch;
