@@ -7,7 +7,7 @@ entity Control is
 	port (
 		sel : in std_logic_vector (2 downto 0);
 		sel_ov, sel_r, sel_b : out std_logic;
-		sel_s, sel_log : out std_logic_vector (1 downto 0)
+		sel_s, sel_log : out _std_logic_vector (1 downto 0)
 	) ;
 end Control;
 --sel_s aritmetica 00, multiplicador 01 sumador 10

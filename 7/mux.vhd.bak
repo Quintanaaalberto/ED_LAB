@@ -1,7 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;              -- for type conversions
 
-entity mux is
+entity  is
 	port (
 		e0, e1 	: in std_logic;
 		sel		: in std_logic;

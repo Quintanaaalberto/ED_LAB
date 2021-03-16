@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;        -- for addition & counting
 use ieee.numeric_std.all;               -- for type conversions
 
-entity alu is
+entity  is
 	port (
 		A_in, B_in 		:in std_logic_vector(4 downto 0);
 		sel_in			:in std_logic_vector(2 downto 0);
@@ -86,8 +86,8 @@ begin
 	
 	icontrol : Control
 			PORT MAP(
-				sel => sel_in, sel_ov => sel_ov, sel_r => sel_r, sel_b => sel_b,
-				sel_s => sel_s, sel_log => sel_log
+				sel => sel_in, sel_ov => sel _ov, sel_r => sel_r, sel_b => sel_b,
+				sel_s => sel_s, sel_log => sel _log
 				);
 	imux5bits : mux5bits
 			PORT MAP(
