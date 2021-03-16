@@ -7,7 +7,7 @@ entity  is
 	port (
 		a, b 	: in std_logic_vector(4 downto 0);
 		sel 	: in std_logic_vector(2 downto 0);
-		ov, sign 		: out std_logic;
+		ov 		: out std_logic;
 		S 		: out std_logic_vector(4 downto 0)
 	) ;
 end ;
@@ -25,10 +25,9 @@ architecture pr7_arc of  pr7 is
 		END COMPONENT;
 	COMPONENT BinA7Seg_Dec
 			PORT(
-				num 			: in std_logic_vector (5 downto 0);
+				N 			: in std_logic_vector (5 downto 0);
 				Display1 	: out std_logic_vector (6 downto 0);
-				Display2 	: out std_logic_vector (6 downto 0);
-				signo : out std_logic
+				Display2 	: out std_logic_vector (6 downto 0)
 				);
 		END COMPONENT;
 begin
@@ -40,7 +39,7 @@ begin
 				);
 	idisplay : BinA7Seg_Dec
 			PORT MAP(
-				num =>  S, Display1 => disp1, Display2 => disp2, signo=> sign
+				N =>  S, Display1 => disp1, Display2 => disp2
 				);
 
 end  pr7_arc;

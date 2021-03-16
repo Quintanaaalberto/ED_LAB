@@ -52,28 +52,28 @@ begin
 			sel_log<="11";
 
 		elsif sel="100" then
-			sel_ov<='0';
+			sel_ov<='1';
 			sel_r<='0';
 			sel_b<='1';
 			sel_s<="10";
 			sel_log<="--";
 
 		elsif sel="101" then
-			sel_ov<='0';
+			sel_ov<='1';
 			sel_r<='1';
 			sel_b<='1';
 			sel_s<="10";
 			sel_log<="--";
 
 		elsif sel="110" then
-			sel_ov<='0';
+			sel_ov<='1';
 			sel_r<='0';
 			sel_b<='0';
 			sel_s<="10";
 			sel_log<="--";
 
 		elsif sel="111" then
-			sel_ov<='1';
+			sel_ov<='0';
 			sel_r<='-';
 			sel_b<='-';
 			sel_s<="01";
