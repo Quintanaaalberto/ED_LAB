@@ -22,47 +22,31 @@
 # -- Compiling entity Practica6
 # -- Compiling architecture structure of Practica6
 # 
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Practica6/simulation/modelsim/Practica6.vht}
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/6/Practica6/simulation/modelsim/Multiplicador5Bits.vht}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Practica6_vhd_tst
-# -- Compiling architecture Practica6_arch of Practica6_vhd_tst
-# ** Warning: [4] C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Practica6/simulation/modelsim/Practica6.vht(79): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# -- Compiling entity Multiplicador5Bits_vhd_tst
+# -- Compiling architecture Multiplicador5Bits_arch of Multiplicador5Bits_vhd_tst
 # 
-# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /i1=Practica6_vhd.sdo -L cycloneii -L gate_work -L work -voptargs="+acc"  Practica6_vhd_tst
-# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /i1=Practica6_vhd.sdo -t 1ps Practica6_vhd_tst 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /i1=Practica6_vhd.sdo -L cycloneii -L gate_work -L work -voptargs="+acc"  Multiplicador5Bits_vhd_tst
+# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /i1=Practica6_vhd.sdo -t 1ps Multiplicador5Bits_vhd_tst 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.practica6_vhd_tst(practica6_arch)
-# SDF 10.1d Compiler 2012.11 Nov  2 2012
-# 
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading cycloneii.cycloneii_atom_pack(body)
-# Loading cycloneii.cycloneii_components
-# Loading work.practica6(structure)
-# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
-# Loading ieee.std_logic_arith(body)
-# Loading cycloneii.cycloneii_io(structure)
-# Loading cycloneii.cycloneii_mux21(altvital)
-# Loading cycloneii.cycloneii_dffe(behave)
-# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading work.multiplicador5bits_vhd_tst(multiplicador5bits_arch)
+# ** Warning: (vsim-3473) Component instance "i1 : Multiplicador5Bits" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /multiplicador5bits_vhd_tst File: C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/6/Practica6/simulation/modelsim/Multiplicador5Bits.vht
 # Loading instances from Practica6_vhd.sdo
-# Loading timing data from Practica6_vhd.sdo
-# ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim Altera version. Expect performance to be adversely affected.
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /practica6_vhd_tst File: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Practica6/simulation/modelsim/Practica6.vht
+# ** Error: (vsim-SDF-3250) Practica6_vhd.sdo(0): Failed to find INSTANCE '/i1'.
 # 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
+# ** Error: (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+# 
+# ** Error: (vsim-SDF-3250) Practica6_vhd.sdo(0): Failed to find INSTANCE '/i1'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./Practica6_run_msim_gate_vhdl.do PAUSED at line 12
+
