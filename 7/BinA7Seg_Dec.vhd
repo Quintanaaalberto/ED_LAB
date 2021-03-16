@@ -17,11 +17,11 @@ architecture BinA7Seg_Dec_arc of BinA7Seg_Dec is
 signal d1 : std_logic_vector(5 downto 0);
 signal d2 : std_logic_vector(3 downto 0);
 signal restador : std_logic_vector(5 downto 0);
-signal N : std_logic_vector (4 downto 0);
+signal N : std_logic_vector (5 downto 0);
 signal uno : unsigned (4 downto 0); 
-signal
+
 	begin
-	uno<=unsigned("00001");
+	uno<="00001";
 	N<=std_logic_vector((unsigned(not(num))+uno)) when num(4)='1' else num;
 	
 	signo<='0' when num(4)='1' else '1';

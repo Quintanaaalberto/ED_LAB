@@ -29,7 +29,7 @@ END U_Func_Log;
 				  e1 when "01",
 				  e2 when "10",
 				  e3 when "11",
-				  "0" when others;
+				  "00000" when others;
 		
 	END behavioural;		  
 			

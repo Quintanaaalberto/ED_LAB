@@ -10,11 +10,11 @@ entity Control is
 		sel_s, sel_log : out std_logic_vector (1 downto 0)
 	) ;
 end Control;
---sel_s aritmetica 00, multiplicador 01 sumador 10
---sel_log and 00 or 01 xor 10 not 11
---ov 1 multiplicador 0 sumador
---sumar r=0 restar r=0
---+1 sel_b=0 b sel_b=1
+--sel_s aritmetica 00, multiplicador 01 sumador 10 bien
+--sel_log and 00 or 01 xor 10 not 11 bien
+--ov 1 multiplicador 0 sumador bien
+--sumar r=0 restar r=1 bien
+--+1 sel_b=0 b sel_b=1 bien
 
 architecture Control_arc of Control is
 
