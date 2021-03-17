@@ -2,25 +2,25 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\ferna\Documents\GitHub\ED_LAB\7\simulation\modelsim
+Z0 dC:\Users\Joaquin Hijo\Desktop\ELECTRONICA DIGITAL\LAB\Github\ED_LAB\7\simulation\modelsim
 Ealu
-Z1 w1615915883
+Z1 w1615916231
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 Z4 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z7 dC:\Users\ferna\Documents\GitHub\ED_LAB\7\simulation\modelsim
-Z8 8C:/Users/ferna/Documents/GitHub/ED_LAB/7/alu.vhd
-Z9 FC:/Users/ferna/Documents/GitHub/ED_LAB/7/alu.vhd
+Z7 dC:\Users\Joaquin Hijo\Desktop\ELECTRONICA DIGITAL\LAB\Github\ED_LAB\7\simulation\modelsim
+Z8 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/alu.vhd
+Z9 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/alu.vhd
 l0
 L6
 Vj1ml1]f_B;<EZ;6:z9aI70
 Z10 OV;C;10.1d;51
 31
-Z11 !s108 1615985840.260000
-Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/ferna/Documents/GitHub/ED_LAB/7/alu.vhd|
-Z13 !s107 C:/Users/ferna/Documents/GitHub/ED_LAB/7/alu.vhd|
+Z11 !s108 1615986497.020000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/alu.vhd|
+Z13 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/alu.vhd|
 Z14 o-93 -work work -O0
 Z15 tExplicit 1
 !s100 <975Cl9RaNXU2XL?:H_9f0
@@ -45,13 +45,13 @@ R15
 !s100 Iij=1[XY6IQ?[zF09zac]1
 !i10b 1
 Ealu_vhd_tst
-Z16 w1615982222
+Z16 w1615919860
 R2
 R5
 R6
 R7
-Z17 8C:/Users/ferna/Documents/GitHub/ED_LAB/7/simulation/modelsim/alu.vht
-Z18 FC:/Users/ferna/Documents/GitHub/ED_LAB/7/simulation/modelsim/alu.vht
+Z17 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht
+Z18 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht
 l0
 L32
 V`_h:o?>WTdM0`1>74X4RA2
@@ -59,9 +59,9 @@ V`_h:o?>WTdM0`1>74X4RA2
 R10
 31
 !i10b 1
-Z19 !s108 1615985841.557000
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/ferna/Documents/GitHub/ED_LAB/7/simulation/modelsim/alu.vht|
-Z21 !s107 C:/Users/ferna/Documents/GitHub/ED_LAB/7/simulation/modelsim/alu.vht|
+Z19 !s108 1615986499.982000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht|
+Z21 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht|
 R14
 R15
 Aalu_arch
@@ -82,20 +82,20 @@ R21
 R14
 R15
 Ecarrylookahead
-Z22 w1615902573
+Z22 w1614156594
 R5
 R6
 R7
-Z23 8C:/Users/ferna/Documents/GitHub/ED_LAB/7/CarryLookAhead.vhd
-Z24 FC:/Users/ferna/Documents/GitHub/ED_LAB/7/CarryLookAhead.vhd
+Z23 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/CarryLookAhead.vhd
+Z24 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/CarryLookAhead.vhd
 l0
 L4
 V>dYVKQWH4XN>PIDG;WHYH0
 R10
 31
-Z25 !s108 1615985841.429000
-Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/ferna/Documents/GitHub/ED_LAB/7/CarryLookAhead.vhd|
-Z27 !s107 C:/Users/ferna/Documents/GitHub/ED_LAB/7/CarryLookAhead.vhd|
+Z25 !s108 1615986499.665000
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/CarryLookAhead.vhd|
+Z27 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/CarryLookAhead.vhd|
 R14
 R15
 !s100 OV^M[MX9<]ez^KbW4HkLz0
@@ -117,23 +117,23 @@ R15
 !s100 TYZ798k=QYC[9b<Jd;jH=2
 !i10b 1
 Econtrol
-R16
+Z28 w1615921046
 R2
 R3
 R4
 R5
 R6
 R7
-Z28 8C:/Users/ferna/Documents/GitHub/ED_LAB/7/Control.vhd
-Z29 FC:/Users/ferna/Documents/GitHub/ED_LAB/7/Control.vhd
+Z29 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Control.vhd
+Z30 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Control.vhd
 l0
 L6
 VYdQm2F9AJ49M=7OX07O4R0
 R10
 31
-Z30 !s108 1615985841.297000
-Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/ferna/Documents/GitHub/ED_LAB/7/Control.vhd|
-Z32 !s107 C:/Users/ferna/Documents/GitHub/ED_LAB/7/Control.vhd|
+Z31 !s108 1615986499.383000
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Control.vhd|
+Z33 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Control.vhd|
 R14
 R15
 !s100 O<H6lWDQzH1gjUThEgB7[3
@@ -150,29 +150,29 @@ L19
 VJ7jU5TzeJL:f^>h@GW_B:0
 R10
 31
-R30
 R31
 R32
+R33
 R14
 R15
 !s100 B`Ao2Cbm_Uh6_FinNIfC]3
 !i10b 1
 Emultiplicador5bits_c2
-Z33 w1615985463
+Z34 w1615986249
 R2
 R5
 R6
 R7
-Z34 8C:/Users/ferna/Documents/GitHub/ED_LAB/7/Multiplicador5Bits_C2.vhd
-Z35 FC:/Users/ferna/Documents/GitHub/ED_LAB/7/Multiplicador5Bits_C2.vhd
+Z35 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Multiplicador5Bits_C2.vhd
+Z36 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Multiplicador5Bits_C2.vhd
 l0
 L5
 VA;k^Af3AMYZB118aObk2j3
 R10
 31
-Z36 !s108 1615985841.151000
-Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/ferna/Documents/GitHub/ED_LAB/7/Multiplicador5Bits_C2.vhd|
-Z38 !s107 C:/Users/ferna/Documents/GitHub/ED_LAB/7/Multiplicador5Bits_C2.vhd|
+Z37 !s108 1615986499.092000
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Multiplicador5Bits_C2.vhd|
+Z39 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Multiplicador5Bits_C2.vhd|
 R14
 R15
 !s100 h^lK55<JIgQbAN@VIc;`]0
@@ -187,28 +187,28 @@ L14
 VTE9=;IlkRc20^@Pfof4TK3
 R10
 31
-R36
 R37
 R38
+R39
 R14
 R15
 !s100 ]CO`X@n9R8^6YDB<=LeJF1
 !i10b 1
 Emux
-Z39 w1615914887
+Z40 w1615915799
 R5
 R6
 R7
-Z40 8C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux.vhd
-Z41 FC:/Users/ferna/Documents/GitHub/ED_LAB/7/mux.vhd
+Z41 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux.vhd
+Z42 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux.vhd
 l0
 L4
 VY]R?c1W0b^8h[GQ9h;EI[3
 R10
 31
-Z42 !s108 1615985841.026000
-Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux.vhd|
-Z44 !s107 C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux.vhd|
+Z43 !s108 1615986498.707000
+Z44 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux.vhd|
+Z45 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux.vhd|
 R14
 R15
 !s100 7f:0Ggi]ajlSZ>hV4aD<C3
@@ -222,28 +222,28 @@ L12
 V0o8g21d5>SaLdb9K4Fc543
 R10
 31
-R42
 R43
 R44
+R45
 R14
 R15
 !s100 ELYS[WW>;j=9:Tc_95lb22
 !i10b 1
 Emux5bits
-Z45 w1615914886
+R40
 R5
 R6
 R7
-Z46 8C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits.vhd
-Z47 FC:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits.vhd
+Z46 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux5bits.vhd
+Z47 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux5bits.vhd
 l0
 L4
 VEgmm`90kF6zVCQ>S=4[nJ2
 R10
 31
-Z48 !s108 1615985840.900000
-Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits.vhd|
-Z50 !s107 C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits.vhd|
+Z48 !s108 1615986498.365000
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux5bits.vhd|
+Z50 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux5bits.vhd|
 R14
 R15
 !s100 ;7h>3_5KXnQ96[Oa0CoDD2
@@ -265,20 +265,20 @@ R15
 !s100 33RfccoG:W^HF;RM:]PHa3
 !i10b 1
 Emux5bits3to1
-Z51 w1615915027
+R40
 R5
 R6
 R7
-Z52 8C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits3to1.vhd
-Z53 FC:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits3to1.vhd
+Z51 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux5bits3to1.vhd
+Z52 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux5bits3to1.vhd
 l0
 L4
 V]Skb?P>2miDT1iFb@S0W42
 R10
 31
-Z54 !s108 1615985840.775000
-Z55 !s90 -reportprogress|300|-93|-work|work|C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits3to1.vhd|
-Z56 !s107 C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits3to1.vhd|
+Z53 !s108 1615986498.164000
+Z54 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux5bits3to1.vhd|
+Z55 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux5bits3to1.vhd|
 R14
 R15
 !s100 ;EW8KOBB^^P19iXEgM]Fb1
@@ -292,28 +292,28 @@ L12
 VXZGY5[XC[CL68[F`YKV^Z3
 R10
 31
+R53
 R54
 R55
-R56
 R14
 R15
 !s100 FFhoi4Wj66l^EE<fJ5J>M1
 !i10b 1
 Esumador1bit
-R22
+Z56 w1614156474
 R5
 R6
 R7
-Z57 8C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador1Bit.vhd
-Z58 FC:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador1Bit.vhd
+Z57 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador1Bit.vhd
+Z58 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador1Bit.vhd
 l0
 L4
 V08SHR:5j1DnP=:Yl2Na:a1
 R10
 31
-Z59 !s108 1615985840.525000
-Z60 !s90 -reportprogress|300|-93|-work|work|C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador1Bit.vhd|
-Z61 !s107 C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador1Bit.vhd|
+Z59 !s108 1615986497.564000
+Z60 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador1Bit.vhd|
+Z61 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador1Bit.vhd|
 R14
 R15
 !s100 nY0=Nlj^8Sg1Cf]XCMWol3
@@ -335,23 +335,23 @@ R15
 !s100 6n;h5MHDASbYE_Ao^lHj40
 !i10b 1
 Esumador_restador5bits
-R16
+Z62 w1615921914
 R2
 R3
 R4
 R5
 R6
 R7
-Z62 8C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador_Restador5bits.vhd
-Z63 FC:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador_Restador5bits.vhd
+Z63 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador_Restador5bits.vhd
+Z64 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador_Restador5bits.vhd
 l0
 L6
 V[=<<@EZGIU>zK;oc>h`8_3
 R10
 31
-Z64 !s108 1615985840.650000
-Z65 !s90 -reportprogress|300|-93|-work|work|C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador_Restador5bits.vhd|
-Z66 !s107 C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador_Restador5bits.vhd|
+Z65 !s108 1615986497.897000
+Z66 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador_Restador5bits.vhd|
+Z67 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador_Restador5bits.vhd|
 R14
 R15
 !s100 DRChnFg<__9;aV1?HH?D[1
@@ -368,29 +368,29 @@ L15
 VmKCHJ=z?=C9FWWA7@bn4M2
 R10
 31
-R64
 R65
 R66
+R67
 R14
 R15
 !s100 0Z2c=XGMUWTdh4>06m^F;2
 !i10b 1
 Eu_func_log
-Z67 w1615919044
+Z68 w1615919529
 R2
 R5
 R6
 R7
-Z68 8C:/Users/ferna/Documents/GitHub/ED_LAB/7/U_Func_Log.vhd
-Z69 FC:/Users/ferna/Documents/GitHub/ED_LAB/7/U_Func_Log.vhd
+Z69 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/U_Func_Log.vhd
+Z70 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/U_Func_Log.vhd
 l0
 L5
 VD8?gnUF=ENEnG3Ui9AIgz3
 R10
 31
-Z70 !s108 1615985840.400000
-Z71 !s90 -reportprogress|300|-93|-work|work|C:/Users/ferna/Documents/GitHub/ED_LAB/7/U_Func_Log.vhd|
-Z72 !s107 C:/Users/ferna/Documents/GitHub/ED_LAB/7/U_Func_Log.vhd|
+Z71 !s108 1615986497.273000
+Z72 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/U_Func_Log.vhd|
+Z73 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/U_Func_Log.vhd|
 R14
 R15
 !s100 >MFX6GnoZDNG_`Q;L^Zec0
@@ -405,9 +405,9 @@ L13
 VZiVZQD1@9j:Y`F9QC0C0j3
 R10
 31
-R70
 R71
 R72
+R73
 R14
 R15
 !s100 ]M]^zSa2hkcA`UiU6Y8TD2

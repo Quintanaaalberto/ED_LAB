@@ -1,99 +1,28 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# ERROR: No extended dataflow license exists
-# do pr7_run_msim_rtl_vhdl.do 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
+# do pr7_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
 # }
-# vlib rtl_work
-# vmap work rtl_work
+# vlib gate_work
+# vmap work gate_work
 # Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/alu.vhd}
+# vcom -93 -work work {pr7.vho}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
 # -- Compiling entity alu
-# -- Compiling architecture alu_arc of alu
-# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/U_Func_Log.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity U_Func_Log
-# -- Compiling architecture behavioural of U_func_Log
-# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador1Bit.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Sumador1Bit
-# -- Compiling architecture Sumador1Bit_arc of Sumador1Bit
-# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador_Restador5bits.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Sumador_Restador5Bits
-# -- Compiling architecture Sumador_Restador5Bits_arc of Sumador_Restador5Bits
-# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits3to1.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux5bits3to1
-# -- Compiling architecture mux5bits3to1_arc of mux5bits3to1
-# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux5bits
-# -- Compiling architecture mux5bits_arc of mux5bits
-# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux
-# -- Compiling architecture mux_arc of mux
-# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/Multiplicador5Bits_C2.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Multiplicador5Bits_C2
-# -- Compiling architecture Behavioural of Multiplicador5Bits_C2
-# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/Control.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Control
-# -- Compiling architecture Control_arc of Control
-# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/CarryLookAhead.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity CarryLookAhead
-# -- Compiling architecture CarryLookAhead_arc of CarryLookAhead
+# -- Compiling architecture structure of alu
 # 
-# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/simulation/modelsim/alu.vht}
+# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -102,64 +31,46 @@
 # -- Compiling entity alu_vhd_tst
 # -- Compiling architecture alu_arch of alu_vhd_tst
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  alu_vhd_tst
-# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps alu_vhd_tst 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /i1=pr7_vhd.sdo -L cycloneii -L gate_work -L work -voptargs="+acc"  alu_vhd_tst
+# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /i1=pr7_vhd.sdo -t 1ps alu_vhd_tst 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.alu_vhd_tst(alu_arch)
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.alu(structure)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
 # Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.alu(alu_arc)
-# Loading work.control(control_arc)
-# Loading work.mux5bits(mux5bits_arc)
-# Loading work.sumador_restador5bits(sumador_restador5bits_arc)
-# Loading work.sumador1bit(sumador1bit_arc)
-# Loading work.carrylookahead(carrylookahead_arc)
-# Loading work.multiplicador5bits_c2(behavioural)
-# Loading work.u_func_log(behavioural)
-# Loading work.mux5bits3to1(mux5bits3to1_arc)
-# Loading work.mux(mux_arc)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading instances from pr7_vhd.sdo
+# Loading timing data from pr7_vhd.sdo
+# ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst File: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Joaquin Hijo  Hostname: JOAQUIN-PORTATI  ProcessID: 3760
 # 
-#           Attempting to use alternate WLF file "./wlftzfndgb".
+#           Attempting to use alternate WLF file "./wlftafam8z".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftzfndgb
+#           Using alternate file: ./wlftafam8z
 # 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-add wave -position insertpoint  \
-sim:/alu_vhd_tst/i1/imultiplicador/A \
-sim:/alu_vhd_tst/i1/imultiplicador/B \
-sim:/alu_vhd_tst/i1/imultiplicador/S \
-sim:/alu_vhd_tst/i1/imultiplicador/ov \
-sim:/alu_vhd_tst/i1/imultiplicador/prod \
-sim:/alu_vhd_tst/i1/imultiplicador/a1 \
-sim:/alu_vhd_tst/i1/imultiplicador/b1 \
-sim:/alu_vhd_tst/i1/imultiplicador/s1
-run -all

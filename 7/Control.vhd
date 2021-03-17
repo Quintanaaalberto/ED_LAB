@@ -23,7 +23,7 @@ begin
 
 	begin
 		if sel="000" then
-			sel_ov<='-';
+			sel_ov<='0';
 			sel_r<='0';
 			sel_b<='-';
 			sel_s<="00";
@@ -31,21 +31,21 @@ begin
 
 
 		elsif sel="001" then
-			sel_ov<='-';
+			sel_ov<='0';
 			sel_r<='0';
 			sel_b<='-';
 			sel_s<="00";
 			sel_log<="01";
 
 		elsif sel="010" then
-			sel_ov<='-';
+			sel_ov<='0';
 			sel_r<='0';
 			sel_b<='-';
 			sel_s<="00";
 			sel_log<="10";
 
 		elsif sel="011" then
-			sel_ov<='-';
+			sel_ov<='0';
 			sel_r<='0';
 			sel_b<='-';
 			sel_s<="00";

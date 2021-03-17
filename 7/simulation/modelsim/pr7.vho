@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "03/17/2021 13:51:14"
+-- DATE "03/17/2021 14:07:37"
 
 -- 
 -- Device: Altera EP2C20F484C7 Package FBGA484
@@ -214,12 +214,12 @@ SIGNAL \imultiplicador|Add7~1\ : std_logic;
 SIGNAL \imultiplicador|Add7~2_combout\ : std_logic;
 SIGNAL \imux|Selector0~2_combout\ : std_logic;
 SIGNAL \imux|Selector0~4_combout\ : std_logic;
+SIGNAL \iunidadlog|e0\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \sel_in~combout\ : std_logic_vector(2 DOWNTO 0);
 SIGNAL \B_in~combout\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \A_in~combout\ : std_logic_vector(4 DOWNTO 0);
-SIGNAL \isumador|b_j\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \icontrol|sel_log\ : std_logic_vector(1 DOWNTO 0);
-SIGNAL \iunidadlog|e0\ : std_logic_vector(4 DOWNTO 0);
+SIGNAL \isumador|b_j\ : std_logic_vector(4 DOWNTO 0);
 
 BEGIN
 

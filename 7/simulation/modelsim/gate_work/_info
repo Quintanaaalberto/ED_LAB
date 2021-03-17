@@ -2,16 +2,16 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\ferna\Documents\GitHub\ED_LAB\7\simulation\modelsim
+Z0 dC:\Users\Joaquin Hijo\Desktop\ELECTRONICA DIGITAL\LAB\Github\ED_LAB\7\simulation\modelsim
 Ealu
-Z1 w1615982297
+Z1 w1615986457
 Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
 Z3 DPx9 cycloneii 19 cycloneii_atom_pack 0 22 zUjlM<IUJVWSWg:L2<>ic3
 Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
 Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z7 DPx9 cycloneii 20 cycloneii_components 0 22 h@gSJ;Al32oYg[7^PbnAR0
-Z8 dC:\Users\ferna\Documents\GitHub\ED_LAB\7\simulation\modelsim
+Z8 dC:\Users\Joaquin Hijo\Desktop\ELECTRONICA DIGITAL\LAB\Github\ED_LAB\7\simulation\modelsim
 Z9 8pr7.vho
 Z10 Fpr7.vho
 l0
@@ -19,7 +19,7 @@ L34
 V<gnlOKY0OoO8oel4MNc0l2
 Z11 OV;C;10.1d;51
 31
-Z12 !s108 1615982318.072000
+Z12 !s108 1615986952.677000
 Z13 !s90 -reportprogress|300|-93|-work|work|pr7.vho|
 Z14 !s107 pr7.vho|
 Z15 o-93 -work work -O0
@@ -34,9 +34,9 @@ R5
 R6
 R7
 DEx4 work 3 alu 0 22 <gnlOKY0OoO8oel4MNc0l2
-l199
+l224
 L66
-V>N`e>V>EaW5_Ck0KU[C[D0
+VKVh8_MERA:XCoW0=TXU[Z2
 R11
 31
 R12
@@ -44,16 +44,16 @@ R13
 R14
 R15
 R16
-!s100 oPDX@oEi3JGmOA2E3T??W0
+!s100 ?8j7z_n63=WR1a=^6c9kW0
 !i10b 1
 Ealu_vhd_tst
-Z17 w1615982222
+Z17 w1615919860
 Z18 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 R5
 R6
 R8
-Z19 8C:/Users/ferna/Documents/GitHub/ED_LAB/7/simulation/modelsim/alu.vht
-Z20 FC:/Users/ferna/Documents/GitHub/ED_LAB/7/simulation/modelsim/alu.vht
+Z19 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht
+Z20 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht
 l0
 L32
 V`_h:o?>WTdM0`1>74X4RA2
@@ -61,9 +61,9 @@ V`_h:o?>WTdM0`1>74X4RA2
 R11
 31
 !i10b 1
-Z21 !s108 1615982318.306000
-Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/ferna/Documents/GitHub/ED_LAB/7/simulation/modelsim/alu.vht|
-Z23 !s107 C:/Users/ferna/Documents/GitHub/ED_LAB/7/simulation/modelsim/alu.vht|
+Z21 !s108 1615986953.010000
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht|
+Z23 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht|
 R15
 R16
 Aalu_arch
