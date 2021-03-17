@@ -1,5 +1,5 @@
 Assembler report for pr7
-Tue Mar 16 20:22:21 2021
+Wed Mar 17 13:51:11 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/output_files/pr7.sof
-  6. Assembler Device Options: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/output_files/pr7.pof
+  5. Assembler Device Options: C:/Users/ferna/Documents/GitHub/ED_LAB/7/output_files/pr7.sof
+  6. Assembler Device Options: C:/Users/ferna/Documents/GitHub/ED_LAB/7/output_files/pr7.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Mar 16 20:22:21 2021 ;
+; Assembler Status      ; Successful - Wed Mar 17 13:51:11 2021 ;
 ; Revision Name         ; pr7                                   ;
-; Top-level Entity Name ; pr7                                   ;
+; Top-level Entity Name ; alu                                   ;
 ; Family                ; Cyclone II                            ;
 ; Device                ; EP2C20F484C7                          ;
 +-----------------------+---------------------------------------+
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                  ;
-+--------------------------------------------------------------------------------------------+
-; File Name                                                                                  ;
-+--------------------------------------------------------------------------------------------+
-; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/output_files/pr7.sof ;
-; C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/output_files/pr7.pof ;
-+--------------------------------------------------------------------------------------------+
++---------------------------------------------------------------+
+; Assembler Generated Files                                     ;
++---------------------------------------------------------------+
+; File Name                                                     ;
++---------------------------------------------------------------+
+; C:/Users/ferna/Documents/GitHub/ED_LAB/7/output_files/pr7.sof ;
+; C:/Users/ferna/Documents/GitHub/ED_LAB/7/output_files/pr7.pof ;
++---------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/output_files/pr7.sof ;
-+----------------+-----------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                             ;
-+----------------+-----------------------------------------------------------------------------------------------------+
-; Device         ; EP2C20F484C7                                                                                        ;
-; JTAG usercode  ; 0x001C843E                                                                                          ;
-; Checksum       ; 0x001C843E                                                                                          ;
-+----------------+-----------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/ferna/Documents/GitHub/ED_LAB/7/output_files/pr7.sof ;
++----------------+------------------------------------------------------------------------+
+; Option         ; Setting                                                                ;
++----------------+------------------------------------------------------------------------+
+; Device         ; EP2C20F484C7                                                           ;
+; JTAG usercode  ; 0x001C2CD5                                                             ;
+; Checksum       ; 0x001C2CD5                                                             ;
++----------------+------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/output_files/pr7.pof ;
-+--------------------+-------------------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                         ;
-+--------------------+-------------------------------------------------------------------------------------------------+
-; Device             ; EPCS16                                                                                          ;
-; JTAG usercode      ; 0x00000000                                                                                      ;
-; Checksum           ; 0x1DD5D33E                                                                                      ;
-; Compression Ratio  ; 3                                                                                               ;
-+--------------------+-------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/ferna/Documents/GitHub/ED_LAB/7/output_files/pr7.pof ;
++--------------------+--------------------------------------------------------------------+
+; Option             ; Setting                                                            ;
++--------------------+--------------------------------------------------------------------+
+; Device             ; EPCS16                                                             ;
+; JTAG usercode      ; 0x00000000                                                         ;
+; Checksum           ; 0x1DD68FA3                                                         ;
+; Compression Ratio  ; 3                                                                  ;
++--------------------+--------------------------------------------------------------------+
 
 
 +--------------------+
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Mar 16 20:22:19 2021
+    Info: Processing started: Wed Mar 17 13:51:10 2021
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off pr7 -c pr7
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4541 megabytes
-    Info: Processing ended: Tue Mar 16 20:22:21 2021
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Wed Mar 17 13:51:11 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

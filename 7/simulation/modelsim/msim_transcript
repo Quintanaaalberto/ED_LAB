@@ -1,4 +1,5 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
 # do pr7_run_msim_rtl_vhdl.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -10,7 +11,7 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/alu.vhd}
+# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/alu.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,7 +21,7 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity alu
 # -- Compiling architecture alu_arc of alu
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/U_Func_Log.vhd}
+# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/U_Func_Log.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -28,14 +29,14 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity U_Func_Log
 # -- Compiling architecture behavioural of U_func_Log
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador1Bit.vhd}
+# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador1Bit.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Sumador1Bit
 # -- Compiling architecture Sumador1Bit_arc of Sumador1Bit
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador_Restador5bits.vhd}
+# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/Sumador_Restador5bits.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -45,28 +46,28 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Sumador_Restador5Bits
 # -- Compiling architecture Sumador_Restador5Bits_arc of Sumador_Restador5Bits
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux5bits3to1.vhd}
+# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits3to1.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux5bits3to1
 # -- Compiling architecture mux5bits3to1_arc of mux5bits3to1
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux5bits.vhd}
+# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux5bits.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux5bits
 # -- Compiling architecture mux5bits_arc of mux5bits
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/mux.vhd}
+# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/mux.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux
 # -- Compiling architecture mux_arc of mux
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Multiplicador5Bits_C2.vhd}
+# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/Multiplicador5Bits_C2.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -74,7 +75,7 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Multiplicador5Bits_C2
 # -- Compiling architecture Behavioural of Multiplicador5Bits_C2
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Control.vhd}
+# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/Control.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -84,7 +85,7 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Control
 # -- Compiling architecture Control_arc of Control
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/CarryLookAhead.vhd}
+# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/CarryLookAhead.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -92,7 +93,7 @@
 # -- Compiling entity CarryLookAhead
 # -- Compiling architecture CarryLookAhead_arc of CarryLookAhead
 # 
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht}
+# vcom -93 -work work {C:/Users/ferna/Documents/GitHub/ED_LAB/7/simulation/modelsim/alu.vht}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -122,6 +123,15 @@
 # Loading work.mux(mux_arc)
 # 
 # add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Joaquin Hijo  Hostname: JOAQUIN-PORTATI  ProcessID: 3760
+# 
+#           Attempting to use alternate WLF file "./wlftzfndgb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftzfndgb
+# 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -143,146 +153,7 @@
 #    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Failure: Error en el overflow de la suma
-#    Time: 409700 ns  Iteration: 0  Process: /alu_vhd_tst/always File: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht
-# Break in ForLoop loop at C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht line 99
-# Simulation Breakpoint: Break in ForLoop loop at C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht line 99
-# MACRO ./pr7_run_msim_rtl_vhdl.do PAUSED at line 26
-add log -r /*
-restart
-run -all
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Failure: Error en el overflow de la suma
-#    Time: 409700 ns  Iteration: 0  Process: /alu_vhd_tst/always File: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht
-# Break in ForLoop loop at C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht line 99
-add wave -position end  sim:/alu_vhd_tst/i1/isumador/a
-add wave -position end  sim:/alu_vhd_tst/i1/isumador/b
-add wave -position end  sim:/alu_vhd_tst/i1/isumador/c_out
 add wave -position insertpoint  \
-sim:/alu_vhd_tst/i1/isumador/c
-add wave  \
-sim:/alu_vhd_tst/i1/isumador/s_r
-vcom -93 -work work -O0 {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Control.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Control
-# -- Compiling architecture Control_arc of Control
-restart
-# Loading work.control(control_arc)
-run -all
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Failure: Error en el overflow de la suma
-#    Time: 409700 ns  Iteration: 0  Process: /alu_vhd_tst/always File: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht
-# Break in ForLoop loop at C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht line 99
-add wave sim:/alu_vhd_tst/i1/isumador/i_CarryLookAhead/*
-add wave  \
-sim:/alu_vhd_tst/i1/isumador/p
-add wave sim:/alu_vhd_tst/i1/isumador/GenSum(0)/*
-# (vish-4014) No objects found matching '/alu_vhd_tst/i1/isumador/GenSum(0)/*'.
-add wave -position insertpoint  \
-sim:/alu_vhd_tst/i1/isumador/a \
-sim:/alu_vhd_tst/i1/isumador/b \
-sim:/alu_vhd_tst/i1/isumador/s \
-sim:/alu_vhd_tst/i1/isumador/c_out \
-sim:/alu_vhd_tst/i1/isumador/s_r \
-sim:/alu_vhd_tst/i1/isumador/c \
-sim:/alu_vhd_tst/i1/isumador/g \
-sim:/alu_vhd_tst/i1/isumador/p \
-sim:/alu_vhd_tst/i1/isumador/b_j
-add wave sim:/alu_vhd_tst/i1/isumador/GenSum(0)/i_Sumador1Bit/*
-add wave -position insertpoint  \
-sim:/alu_vhd_tst/i1/isumador/b_j
-add wave -position insertpoint  \
-sim:/alu_vhd_tst/i1/isumador/s_r
-add wave -position insertpoint  \
-sim:/alu_vhd_tst/i1/isumador/b
-vcom -93 -work work -O0 {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador_Restador5bits.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Sumador_Restador5Bits
-# -- Compiling architecture Sumador_Restador5Bits_arc of Sumador_Restador5Bits
-# ** Error: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador_Restador5bits.vhd(60): Signal "b_j" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador_Restador5bits.vhd(77): VHDL Compiler exiting
-# C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
-vcom -93 -work work -O0 {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/Sumador_Restador5bits.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Sumador_Restador5Bits
-# -- Compiling architecture Sumador_Restador5Bits_arc of Sumador_Restador5Bits
-restart
-# Loading work.sumador_restador5bits(sumador_restador5bits_arc)
-run -all
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_vhd_tst/i1/icontrol
-# ** Failure: Error en el overflow de la multiplicación
-#    Time: 764900 ns  Iteration: 0  Process: /alu_vhd_tst/always File: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht
-# Break in ForLoop loop at C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/7/simulation/modelsim/alu.vht line 131
-add wave -position insertpoint  \
-sim:/alu_vhd_tst/A_in \
-sim:/alu_vhd_tst/B_in \
-sim:/alu_vhd_tst/OV_out \
-sim:/alu_vhd_tst/S_out \
-sim:/alu_vhd_tst/sel_in
-add wave  \
 sim:/alu_vhd_tst/i1/imultiplicador/A \
 sim:/alu_vhd_tst/i1/imultiplicador/B \
 sim:/alu_vhd_tst/i1/imultiplicador/S \
@@ -291,3 +162,4 @@ sim:/alu_vhd_tst/i1/imultiplicador/prod \
 sim:/alu_vhd_tst/i1/imultiplicador/a1 \
 sim:/alu_vhd_tst/i1/imultiplicador/b1 \
 sim:/alu_vhd_tst/i1/imultiplicador/s1
+run -all
