@@ -1,0 +1,61 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Practica8_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/8/Practica8/DetectorFlanco.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DetectorFlanco
+# -- Compiling architecture behavioural of DetectorFlanco
+# 
+# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/8/Practica8/simulation/modelsim/DetectorFlanco.vht}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DetectorFlanco_vhd_tst
+# -- Compiling architecture DetectorFlanco_arch of DetectorFlanco_vhd_tst
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  DetectorFlanco_vhd_tst
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps DetectorFlanco_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.detectorflanco_vhd_tst(detectorflanco_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.detectorflanco(behavioural)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Failure: Fin de la simulacion
+#    Time: 2210 ns  Iteration: 0  Process: /detectorflanco_vhd_tst/always File: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/8/Practica8/simulation/modelsim/DetectorFlanco.vht
+# Break in Process always at C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/8/Practica8/simulation/modelsim/DetectorFlanco.vht line 84
+# Simulation Breakpoint: Break in Process always at C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/8/Practica8/simulation/modelsim/DetectorFlanco.vht line 84
+# MACRO ./Practica8_run_msim_rtl_vhdl.do PAUSED at line 17
+restart
+run -all
+# ** Failure: Fin de la simulacion
+#    Time: 2210 ns  Iteration: 0  Process: /detectorflanco_vhd_tst/always File: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/8/Practica8/simulation/modelsim/DetectorFlanco.vht
+# Break in Process always at C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/8/Practica8/simulation/modelsim/DetectorFlanco.vht line 84
+add wave -position insertpoint  \
+sim:/detectorflanco_vhd_tst/i1/est_act
+restart
+run -all
+# ** Failure: Fin de la simulacion
+#    Time: 2210 ns  Iteration: 0  Process: /detectorflanco_vhd_tst/always File: C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/8/Practica8/simulation/modelsim/DetectorFlanco.vht
+# Break in Process always at C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/Github/ED_LAB/8/Practica8/simulation/modelsim/DetectorFlanco.vht line 84

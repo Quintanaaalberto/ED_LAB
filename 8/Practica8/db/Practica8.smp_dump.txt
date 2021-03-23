@@ -1,0 +1,6 @@
+
+State Machine - |DetectorFlanco|est_act
+Name est_act.E2 est_act.E1 est_act.E0 
+est_act.E0 0 0 0 
+est_act.E1 0 1 1 
+est_act.E2 1 0 1 

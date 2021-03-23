@@ -1,0 +1,14 @@
+|DetectorFlanco
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => Selector1.IN2
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => Selector0.IN1
+reset_n => est_act~3.DATAIN
+clk => est_act~1.DATAIN
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
