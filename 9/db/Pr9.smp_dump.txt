@@ -1,0 +1,20 @@
+
+State Machine - |Password|currentState
+Name currentState.success currentState.correct3 currentState.correct2 currentState.correct1 currentState.standby 
+currentState.standby 0 0 0 0 0 
+currentState.correct1 0 0 0 1 1 
+currentState.correct2 0 0 1 0 1 
+currentState.correct3 0 1 0 0 1 
+currentState.success 1 0 0 0 1 
+
+State Machine - |Password|DetectorFlanco:FlancoP1|est_act
+Name est_act.E2 est_act.E1 est_act.E0 
+est_act.E0 0 0 0 
+est_act.E1 0 1 1 
+est_act.E2 1 0 1 
+
+State Machine - |Password|DetectorFlanco:FlancoP0|est_act
+Name est_act.E2 est_act.E1 est_act.E0 
+est_act.E0 0 0 0 
+est_act.E1 0 1 1 
+est_act.E2 1 0 1 

@@ -1,0 +1,74 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Pr9_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/9/Password.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Password
+# -- Compiling architecture Password_arc of Password
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/9/detectorflanco.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DetectorFlanco
+# -- Compiling architecture behavioural of DetectorFlanco
+# 
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/9/simulation/modelsim/Password.vht}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Password_vhd_tst
+# -- Compiling architecture Practica9_arch of Password_vhd_tst
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  Password_vhd_tst
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Password_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.password_vhd_tst(practica9_arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.password(password_arc)
+# Loading work.detectorflanco(behavioural)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: Error: No se activa la salida tras introducir una secuencia correcta
+#    Time: 1710 ns  Iteration: 0  Instance: /password_vhd_tst
+# ** Failure: Fin de la simulacion
+#    Time: 5010 ns  Iteration: 0  Process: /password_vhd_tst/always File: C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/9/simulation/modelsim/Password.vht
+# Break in Process always at C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/9/simulation/modelsim/Password.vht line 135
+# Simulation Breakpoint: Break in Process always at C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/9/simulation/modelsim/Password.vht line 135
+# MACRO ./Pr9_run_msim_rtl_vhdl.do PAUSED at line 18
+add wave -position end  sim:/password_vhd_tst/i1/currentState
+add wave -position end  sim:/password_vhd_tst/i1/nextState
+run -all
+# ** Warning: Error: No se activa la salida tras introducir una secuencia correcta
+#    Time: 6720 ns  Iteration: 0  Instance: /password_vhd_tst
+# ** Failure: Fin de la simulacion
+#    Time: 10020 ns  Iteration: 0  Process: /password_vhd_tst/always File: C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/9/simulation/modelsim/Password.vht
+# Break in Process always at C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/9/simulation/modelsim/Password.vht line 135
+# Simulation Breakpoint: Break in Process always at C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/9/simulation/modelsim/Password.vht line 135
+# MACRO ./Pr9_run_msim_rtl_vhdl.do PAUSED at line 18

@@ -1,0 +1,41 @@
+|Password
+clk => DetectorFlanco:FlancoP0.clk
+clk => DetectorFlanco:FlancoP1.clk
+clk => currentState~1.DATAIN
+p0 => DetectorFlanco:FlancoP0.e
+p1 => DetectorFlanco:FlancoP1.e
+reset => DetectorFlanco:FlancoP0.reset_n
+reset => DetectorFlanco:FlancoP1.reset_n
+reset => currentState~3.DATAIN
+led_R <= led_R.DB_MAX_OUTPUT_PORT_TYPE
+led_G <= led_G.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Password|DetectorFlanco:FlancoP0
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => Selector1.IN2
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => Selector0.IN1
+reset_n => est_act~3.DATAIN
+clk => est_act~1.DATAIN
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Password|DetectorFlanco:FlancoP1
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => Selector1.IN2
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => Selector0.IN1
+reset_n => est_act~3.DATAIN
+clk => est_act~1.DATAIN
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
