@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;        -- for addition & counting
+use ieee.numeric_std.all;               -- for type conversions
+
+entity DetectorFlanco is
+	port (
+		-- reloj del sistema
+		clk 	: in std_logic;
+		-- entrada
+		e 		: in std_logic;
+		-- reset asincrono
+		reset_n	: in std_logic;
+		-- salida
+		s 		: out std_logic
+	) ;
+end DetectorFlanco;
+
+architecture DetectorFlanco_arc of DetectorFlanco is
+
+	signal prevState	: std_logic;
+
+begin
+	/* this can also be done via the command 
+	falling_edge (signal_name) */
+	if (e<prevState) then
+		s => '1';
+		prevState => e;
+	else
+		s => '0';
+	end if;
+	
+end  DetectorFlanco_arc;
