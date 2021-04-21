@@ -1,0 +1,186 @@
+|Practica10
+clk => ControlParking:i1.clk
+reset_n => ControlParking:i1.reset_n
+c_in => ControlParking:i1.c_in
+c_out => ControlParking:i1.c_out
+max_c[0] => ControlParking:i1.max_c[0]
+max_c[1] => ControlParking:i1.max_c[1]
+max_c[2] => ControlParking:i1.max_c[2]
+max_c[3] => ControlParking:i1.max_c[3]
+max_c[4] => ControlParking:i1.max_c[4]
+max_c[5] => ControlParking:i1.max_c[5]
+max_c[6] => ControlParking:i1.max_c[6]
+max_c[7] => ControlParking:i1.max_c[7]
+d0[0] <= BinA7Seg:i2.Display[0]
+d0[1] <= BinA7Seg:i2.Display[1]
+d0[2] <= BinA7Seg:i2.Display[2]
+d0[3] <= BinA7Seg:i2.Display[3]
+d0[4] <= BinA7Seg:i2.Display[4]
+d0[5] <= BinA7Seg:i2.Display[5]
+d0[6] <= BinA7Seg:i2.Display[6]
+d1[0] <= BinA7Seg:i3.Display[0]
+d1[1] <= BinA7Seg:i3.Display[1]
+d1[2] <= BinA7Seg:i3.Display[2]
+d1[3] <= BinA7Seg:i3.Display[3]
+d1[4] <= BinA7Seg:i3.Display[4]
+d1[5] <= BinA7Seg:i3.Display[5]
+d1[6] <= BinA7Seg:i3.Display[6]
+libre <= ControlParking:i1.libre
+ocupado <= ControlParking:i1.ocupado
+
+
+|Practica10|ControlParking:i1
+clk => DetectorFlanco:i1.clk
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+clk => contador[4].CLK
+clk => contador[5].CLK
+clk => contador[6].CLK
+clk => contador[7].CLK
+clk => DetectorFlanco:i2.clk
+reset_n => DetectorFlanco:i1.reset_n
+reset_n => DetectorFlanco:i2.reset_n
+reset_n => contador[0].ACLR
+reset_n => contador[1].ACLR
+reset_n => contador[2].ACLR
+reset_n => contador[3].ACLR
+reset_n => contador[4].ACLR
+reset_n => contador[5].ACLR
+reset_n => contador[6].ACLR
+reset_n => contador[7].ACLR
+c_in => DetectorFlanco:i1.e
+c_out => DetectorFlanco:i2.e
+max_c[0] => LessThan0.IN8
+max_c[0] => Equal0.IN7
+max_c[1] => LessThan0.IN7
+max_c[1] => Equal0.IN6
+max_c[2] => LessThan0.IN6
+max_c[2] => Equal0.IN5
+max_c[3] => LessThan0.IN5
+max_c[3] => Equal0.IN4
+max_c[4] => LessThan0.IN4
+max_c[4] => Equal0.IN3
+max_c[5] => LessThan0.IN3
+max_c[5] => Equal0.IN2
+max_c[6] => LessThan0.IN2
+max_c[6] => Equal0.IN1
+max_c[7] => LessThan0.IN1
+max_c[7] => Equal0.IN0
+s[0] <= contador[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= contador[1].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= contador[2].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= contador[3].DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= contador[4].DB_MAX_OUTPUT_PORT_TYPE
+s[5] <= contador[5].DB_MAX_OUTPUT_PORT_TYPE
+s[6] <= contador[6].DB_MAX_OUTPUT_PORT_TYPE
+s[7] <= contador[7].DB_MAX_OUTPUT_PORT_TYPE
+libre <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ocupado <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica10|ControlParking:i1|DetectorFlanco:i1
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => Selector1.IN2
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => Selector0.IN1
+reset_n => est_act~3.DATAIN
+clk => est_act~1.DATAIN
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica10|ControlParking:i1|DetectorFlanco:i2
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => Selector1.IN2
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => est_sig.OUTPUTSELECT
+e => Selector0.IN1
+reset_n => est_act~3.DATAIN
+clk => est_act~1.DATAIN
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica10|BinA7Seg:i2
+N[0] => Mux0.IN19
+N[0] => Mux1.IN19
+N[0] => Mux2.IN19
+N[0] => Mux3.IN19
+N[0] => Mux4.IN19
+N[0] => Mux5.IN19
+N[0] => Mux6.IN19
+N[1] => Mux0.IN18
+N[1] => Mux1.IN18
+N[1] => Mux2.IN18
+N[1] => Mux3.IN18
+N[1] => Mux4.IN18
+N[1] => Mux5.IN18
+N[1] => Mux6.IN18
+N[2] => Mux0.IN17
+N[2] => Mux1.IN17
+N[2] => Mux2.IN17
+N[2] => Mux3.IN17
+N[2] => Mux4.IN17
+N[2] => Mux5.IN17
+N[2] => Mux6.IN17
+N[3] => Mux0.IN16
+N[3] => Mux1.IN16
+N[3] => Mux2.IN16
+N[3] => Mux3.IN16
+N[3] => Mux4.IN16
+N[3] => Mux5.IN16
+N[3] => Mux6.IN16
+Display[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Display[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica10|BinA7Seg:i3
+N[0] => Mux0.IN19
+N[0] => Mux1.IN19
+N[0] => Mux2.IN19
+N[0] => Mux3.IN19
+N[0] => Mux4.IN19
+N[0] => Mux5.IN19
+N[0] => Mux6.IN19
+N[1] => Mux0.IN18
+N[1] => Mux1.IN18
+N[1] => Mux2.IN18
+N[1] => Mux3.IN18
+N[1] => Mux4.IN18
+N[1] => Mux5.IN18
+N[1] => Mux6.IN18
+N[2] => Mux0.IN17
+N[2] => Mux1.IN17
+N[2] => Mux2.IN17
+N[2] => Mux3.IN17
+N[2] => Mux4.IN17
+N[2] => Mux5.IN17
+N[2] => Mux6.IN17
+N[3] => Mux0.IN16
+N[3] => Mux1.IN16
+N[3] => Mux2.IN16
+N[3] => Mux3.IN16
+N[3] => Mux4.IN16
+N[3] => Mux5.IN16
+N[3] => Mux6.IN16
+Display[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Display[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
