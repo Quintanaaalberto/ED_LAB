@@ -10,7 +10,7 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {D:/p10/ControlParking.vhd}
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/ControlParking.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,7 +20,7 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ControlParking
 # -- Compiling architecture ControlParking_arc of ControlParking
-# vcom -93 -work work {D:/p10/DetectorFlanco.vhd}
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/DetectorFlanco.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -28,8 +28,26 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity DetectorFlanco
 # -- Compiling architecture behavioural of DetectorFlanco
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/BinA7Seg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity BinA7Seg
+# -- Compiling architecture BinA7Seg_arc of BinA7Seg
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/Practica10.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Practica10
+# -- Compiling architecture Practica10_arc of Practica10
 # 
-# vcom -93 -work work {D:/p10/simulation/modelsim/ControlParking.vht}
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/simulation/modelsim/ControlParking.vht}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -59,32 +77,8 @@
 #    Time: 0 ps  Iteration: 0  Instance: /controlparking_vhd_tst/i1
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /controlparking_vhd_tst/i1
-run -all
-run -all
-run -all
-run -all
-run -all
-vcom -93 -work work -O0 D:/p10/simulation/modelsim/ControlParking.vht
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity ControlParking_vhd_tst
-# -- Compiling architecture ControlParking_arch of ControlParking_vhd_tst
-restart
-# Loading work.controlparking_vhd_tst(controlparking_arch)
-# Warning in wave window restart: (vish-4014) No objects found matching '/controlparking_vhd_tst/c_in'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/controlparking_vhd_tst/c_out'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/controlparking_vhd_tst/max_c'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/controlparking_vhd_tst/s'. 
-run -all
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /controlparking_vhd_tst/i1
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /controlparking_vhd_tst/i1
 # ** Failure: Fin de la simulacion
-#    Time: 14760 ns  Iteration: 0  Process: /controlparking_vhd_tst/always File: D:/p10/simulation/modelsim/ControlParking.vht
-# Break in Process always at D:/p10/simulation/modelsim/ControlParking.vht line 84
-add wave -position insertpoint  \
-sim:/controlparking_vhd_tst/libre
-add wave sim:/controlparking_vhd_tst/*
+#    Time: 14760 ns  Iteration: 0  Process: /controlparking_vhd_tst/always File: C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/simulation/modelsim/ControlParking.vht
+# Break in Process always at C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/simulation/modelsim/ControlParking.vht line 84
+# Simulation Breakpoint: Break in Process always at C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/simulation/modelsim/ControlParking.vht line 84
+# MACRO ./Practica10_run_msim_rtl_vhdl.do PAUSED at line 20

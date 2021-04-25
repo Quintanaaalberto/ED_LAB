@@ -1,9 +1,9 @@
 vendor_name = ModelSim
-source_file = 1, D:/p10/ControlParking.vhd
-source_file = 1, D:/p10/DetectorFlanco.vhd
-source_file = 1, D:/p10/BinA7Seg.vhd
-source_file = 1, D:/p10/Practica10.vhd
-source_file = 1, D:/p10/db/Practica10.cbx.xml
+source_file = 1, C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/ControlParking.vhd
+source_file = 1, C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/DetectorFlanco.vhd
+source_file = 1, C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/BinA7Seg.vhd
+source_file = 1, C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/Practica10.vhd
+source_file = 1, C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/db/Practica10.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd

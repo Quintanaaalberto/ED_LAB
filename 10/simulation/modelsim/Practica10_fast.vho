@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "04/20/2021 19:25:10"
+-- DATE "04/25/2021 18:43:37"
 
 -- 
 -- Device: Altera EP2C20F484C7 Package FBGA484
@@ -158,10 +158,10 @@ SIGNAL \i1|Equal0~0_combout\ : std_logic;
 SIGNAL \i1|Equal0~4_combout\ : std_logic;
 SIGNAL \i1|contador\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \max_c~combout\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \ALT_INV_reset_n~combout\ : std_logic;
 SIGNAL \i1|ALT_INV_Equal0~4_combout\ : std_logic;
 SIGNAL \i3|ALT_INV_Mux6~0_combout\ : std_logic;
 SIGNAL \i2|ALT_INV_Mux6~0_combout\ : std_logic;
-SIGNAL \ALT_INV_reset_n~combout\ : std_logic;
 
 BEGIN
 
@@ -179,10 +179,10 @@ ww_devclrn <= devclrn;
 ww_devpor <= devpor;
 
 \clk~clkctrl_INCLK_bus\ <= (gnd & gnd & gnd & \clk~combout\);
+\ALT_INV_reset_n~combout\ <= NOT \reset_n~combout\;
 \i1|ALT_INV_Equal0~4_combout\ <= NOT \i1|Equal0~4_combout\;
 \i3|ALT_INV_Mux6~0_combout\ <= NOT \i3|Mux6~0_combout\;
 \i2|ALT_INV_Mux6~0_combout\ <= NOT \i2|Mux6~0_combout\;
-\ALT_INV_reset_n~combout\ <= NOT \reset_n~combout\;
 
 -- Location: PIN_V12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \max_c[3]~I\ : cycloneii_io

@@ -2,117 +2,195 @@ m255
 K3
 13
 cModel Technology
-Z0 dD:\p10\simulation\modelsim
-Econtrolparking
-Z1 w1618937117
+Z0 dC:\Users\quint\OneDrive\Documents\ICAI\ICAI_ElectronicaDigital\GitHub\ED_LAB\10\simulation\modelsim
+Ebina7seg
+Z1 w1619368746
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
-Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
-Z4 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
-Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z7 dD:\p10\simulation\modelsim
-Z8 8D:/p10/ControlParking.vhd
-Z9 FD:/p10/ControlParking.vhd
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\quint\OneDrive\Documents\ICAI\ICAI_ElectronicaDigital\GitHub\ED_LAB\10\simulation\modelsim
+Z6 8C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/BinA7Seg.vhd
+Z7 FC:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/BinA7Seg.vhd
+l0
+L5
+VXX6CmfbVJ[H`M14CG@_5R3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1619369398.118000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/BinA7Seg.vhd|
+Z11 !s107 C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/BinA7Seg.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 X6]1Ve[<Haa]Di7f[VD[63
+!i10b 1
+Abina7seg_arc
+R2
+R3
+R4
+DEx4 work 8 bina7seg 0 22 XX6CmfbVJ[H`M14CG@_5R3
+l15
+L12
+VUF2on=0MJ35jNCIRM^CCA2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 _OJKXE_MVHT66S7jh@5W22
+!i10b 1
+Econtrolparking
+R1
+R2
+Z14 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R3
+R4
+R5
+Z16 8C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/ControlParking.vhd
+Z17 FC:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/ControlParking.vhd
 l0
 L6
 VeX?I1KUl[C6fNdjNIo?cE3
-Z10 OV;C;10.1d;51
+R8
 31
-Z11 !s108 1618938381.369000
-Z12 !s90 -reportprogress|300|-93|-work|work|D:/p10/ControlParking.vhd|
-Z13 !s107 D:/p10/ControlParking.vhd|
-Z14 o-93 -work work -O0
-Z15 tExplicit 1
+Z18 !s108 1619369397.923000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/ControlParking.vhd|
+Z20 !s107 C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/ControlParking.vhd|
+R12
+R13
 !s100 R^Q;fonAc?mAZ1J;YLT0T0
 !i10b 1
 Acontrolparking_arc
 R2
+R14
+R15
 R3
 R4
-R5
-R6
 DEx4 work 14 controlparking 0 22 eX?I1KUl[C6fNdjNIo?cE3
 l35
 L18
 VG7=3V7anP_1a]W?aSdDfI0
-R10
+R8
 31
-R11
+R18
+R19
+R20
 R12
 R13
-R14
-R15
 !s100 FGli7z8ZFYPRZKR6DLmg90
 !i10b 1
 Econtrolparking_vhd_tst
-Z16 w1618938500
+R1
+R3
+R4
 R5
-R6
-R7
-Z17 8D:/p10/simulation/modelsim/ControlParking.vht
-Z18 FD:/p10/simulation/modelsim/ControlParking.vht
+Z21 8C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/simulation/modelsim/ControlParking.vht
+Z22 FC:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/simulation/modelsim/ControlParking.vht
 l0
 L3
 VEIoEC_M<L9cd<IcRRj>;=1
 !s100 [2_^gf>dW4o1LjDzGkc410
-R10
+R8
 31
 !i10b 1
-Z19 !s108 1618938511.405000
-Z20 !s90 -reportprogress|300|-93|-work|work|-O0|D:/p10/simulation/modelsim/ControlParking.vht|
-Z21 !s107 D:/p10/simulation/modelsim/ControlParking.vht|
-R14
-R15
+Z23 !s108 1619369398.347000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/simulation/modelsim/ControlParking.vht|
+Z25 !s107 C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/simulation/modelsim/ControlParking.vht|
+R12
+R13
 Acontrolparking_arch
-R5
-R6
-Z22 DEx4 work 22 controlparking_vhd_tst 0 22 EIoEC_M<L9cd<IcRRj>;=1
+R3
+R4
+DEx4 work 22 controlparking_vhd_tst 0 22 EIoEC_M<L9cd<IcRRj>;=1
 l28
 L6
 VPRmH`CLZ7zI_k=8zzIAoc1
 !s100 gAmS^f@X816@BFXo5=?jX0
-R10
+R8
 31
 !i10b 1
-R19
-R20
-R21
-R14
-R15
+R23
+R24
+R25
+R12
+R13
 Edetectorflanco
-Z23 w1618934906
+R1
 R2
+R3
+R4
 R5
-R6
-R7
-Z24 8D:/p10/DetectorFlanco.vhd
-Z25 FD:/p10/DetectorFlanco.vhd
+Z26 8C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/DetectorFlanco.vhd
+Z27 FC:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/DetectorFlanco.vhd
 l0
 L5
 VThi_XGg5BRIT;WK]T5V]X3
-R10
+R8
 31
-Z26 !s108 1618938381.548000
-Z27 !s90 -reportprogress|300|-93|-work|work|D:/p10/DetectorFlanco.vhd|
-Z28 !s107 D:/p10/DetectorFlanco.vhd|
-R14
-R15
+Z28 !s108 1619369398.029000
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/DetectorFlanco.vhd|
+Z30 !s107 C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/DetectorFlanco.vhd|
+R12
+R13
 !s100 DVFMGFSGHNXD;nW=Q<aN:2
 !i10b 1
 Abehavioural
 R2
-R5
-R6
+R3
+R4
 DEx4 work 14 detectorflanco 0 22 Thi_XGg5BRIT;WK]T5V]X3
 l20
 L14
 V0A9EgT0;DQPP>Y=4McBHS3
-R10
+R8
 31
-R26
-R27
 R28
+R29
+R30
+R12
+R13
+!s100 R;5l`Lo8DYEiRHC=WhEXb3
+!i10b 1
+Epractica10
+R1
+R2
 R14
 R15
-!s100 R;5l`Lo8DYEiRHC=WhEXb3
+R3
+R4
+R5
+Z31 8C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/Practica10.vhd
+Z32 FC:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/Practica10.vhd
+l0
+L7
+VX`Pkn74nVAG4Ec<AJ?fIC1
+R8
+31
+Z33 !s108 1619369398.217000
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/Practica10.vhd|
+Z35 !s107 C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/10/Practica10.vhd|
+R12
+R13
+!s100 z<7[z1LELXn2BJJg:^2FM1
+!i10b 1
+Apractica10_arc
+R2
+R14
+R15
+R3
+R4
+DEx4 work 10 practica10 0 22 X`Pkn74nVAG4Ec<AJ?fIC1
+l48
+L20
+ViEHD;H38;mG1nL6HMB3GA2
+R8
+31
+R33
+R34
+R35
+R12
+R13
+!s100 3VJFga8:HR^dQ:hAZcPXY2
 !i10b 1
