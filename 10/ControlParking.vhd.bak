@@ -10,7 +10,7 @@ entity ControlParking is
 		c_in, c_out : in std_logic;
 		max_c : in std_logic_vector(7 downto 0);
 		s : out std_logic_vector(7 downto 0);
-		libre, ocupado : out std_logic
+		libre, ocupado : std_logic
 
 	) ;
 end ControlParking;
@@ -29,7 +29,7 @@ architecture ControlParking_arc of ControlParking is
 		);
 	end component;
 
-	signal contador : std_logic_vector(7 downto 0);
+	signal contador : unsigned(7 downto 0);
 	signal in_f, out_f : std_logic;
 
 begin
@@ -51,15 +51,15 @@ begin
 		);
 
 
-	subirbajar : process(clk, reset_n)
+	contador : process(clk, reset_n)
 	begin
 
 		if reset_n='0' then contador<=(others =>'0'); --reseteo contador
 
 		elsif clk' event and clk='1' then --flanco reloj
-			if (in_f = '1' and contador < max_c) then contador <= contador + 1; --flanco in y no hemos superado el máximo de coches (por si detectamos una persona o algo)
+			if in_f = '1' and contador < max_c then contador <= contador + 1; --flanco in y no hemos superado el máximo de coches (por si detectamos una persona o algo)
 
-			elsif (out_f = '1' and contador>"00000000") then contador <= contador - 1; --flanco out y no tenemos 0 coches (por si detectamos una persona o algo)
+			elsif out_f = '1' and contador>'0' then contador <= contador - 1; --flanco out y no tenemos 0 coches (por si detectamos una persona o algo)
 
 			end if;
 		end if;
@@ -67,15 +67,14 @@ begin
 
 
 
-	end process subirbajar;
+	end process contador;
 
 	s<=contador;
 
-	salida : process (contador) -- solo cambia a ocupado cuando el contador llega al máximo
-	begin
+	process salida(s) -- solo cambia a ocupado cuando el contador llega al máximo
 	libre<='1';
 	ocupado<='0';
-	if  contador=max_c then 
+	if s=max_c then 
 		libre<='0';
 		ocupado<='1';
 	end if;

@@ -1,0 +1,118 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\p10\simulation\modelsim
+Econtrolparking
+Z1 w1618937117
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 dD:\p10\simulation\modelsim
+Z8 8D:/p10/ControlParking.vhd
+Z9 FD:/p10/ControlParking.vhd
+l0
+L6
+VeX?I1KUl[C6fNdjNIo?cE3
+Z10 OV;C;10.1d;51
+31
+Z11 !s108 1618938381.369000
+Z12 !s90 -reportprogress|300|-93|-work|work|D:/p10/ControlParking.vhd|
+Z13 !s107 D:/p10/ControlParking.vhd|
+Z14 o-93 -work work -O0
+Z15 tExplicit 1
+!s100 R^Q;fonAc?mAZ1J;YLT0T0
+!i10b 1
+Acontrolparking_arc
+R2
+R3
+R4
+R5
+R6
+DEx4 work 14 controlparking 0 22 eX?I1KUl[C6fNdjNIo?cE3
+l35
+L18
+VG7=3V7anP_1a]W?aSdDfI0
+R10
+31
+R11
+R12
+R13
+R14
+R15
+!s100 FGli7z8ZFYPRZKR6DLmg90
+!i10b 1
+Econtrolparking_vhd_tst
+Z16 w1618938500
+R5
+R6
+R7
+Z17 8D:/p10/simulation/modelsim/ControlParking.vht
+Z18 FD:/p10/simulation/modelsim/ControlParking.vht
+l0
+L3
+VEIoEC_M<L9cd<IcRRj>;=1
+!s100 [2_^gf>dW4o1LjDzGkc410
+R10
+31
+!i10b 1
+Z19 !s108 1618938511.405000
+Z20 !s90 -reportprogress|300|-93|-work|work|-O0|D:/p10/simulation/modelsim/ControlParking.vht|
+Z21 !s107 D:/p10/simulation/modelsim/ControlParking.vht|
+R14
+R15
+Acontrolparking_arch
+R5
+R6
+Z22 DEx4 work 22 controlparking_vhd_tst 0 22 EIoEC_M<L9cd<IcRRj>;=1
+l28
+L6
+VPRmH`CLZ7zI_k=8zzIAoc1
+!s100 gAmS^f@X816@BFXo5=?jX0
+R10
+31
+!i10b 1
+R19
+R20
+R21
+R14
+R15
+Edetectorflanco
+Z23 w1618934906
+R2
+R5
+R6
+R7
+Z24 8D:/p10/DetectorFlanco.vhd
+Z25 FD:/p10/DetectorFlanco.vhd
+l0
+L5
+VThi_XGg5BRIT;WK]T5V]X3
+R10
+31
+Z26 !s108 1618938381.548000
+Z27 !s90 -reportprogress|300|-93|-work|work|D:/p10/DetectorFlanco.vhd|
+Z28 !s107 D:/p10/DetectorFlanco.vhd|
+R14
+R15
+!s100 DVFMGFSGHNXD;nW=Q<aN:2
+!i10b 1
+Abehavioural
+R2
+R5
+R6
+DEx4 work 14 detectorflanco 0 22 Thi_XGg5BRIT;WK]T5V]X3
+l20
+L14
+V0A9EgT0;DQPP>Y=4McBHS3
+R10
+31
+R26
+R27
+R28
+R14
+R15
+!s100 R;5l`Lo8DYEiRHC=WhEXb3
+!i10b 1
