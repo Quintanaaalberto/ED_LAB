@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity p11 is
+	port(
+		clk        : in std_logic;
+		reset_n    : in std_logic;
+		fin_cuenta : in std_logic;
+		p1         : in std_logic;
+		p2         : in std_logic;
+		puerta     : in std_logic;
+		enc_temp   : in std_logic;
+		fin        : out std_logic;
+		horno_on   : out std_logic;
+		abierta    : out std_logic;
+		ent_p      : in std_logic_vector(6 downto 0); -- entrada paralelo
+		d_a        : out std_logic_vector(6 downto 0); -- unidades de segundo 
+		d_b        : out std_logic_vector(6 downto 0); -- decenas de segundo
+		d_c        : out std_logic_vector(6 downto 0); -- unidades de minuto 
+		d_d        : out std_logic_vector(6 downto 0)  -- decenas de minuto
+		);
+	end p11;
+	
+	architecture behavioural of p11 is 
+		
+		component DetectorFlanco
+			
+	

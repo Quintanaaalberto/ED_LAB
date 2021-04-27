@@ -1,0 +1,53 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity datapath is 
+	port (
+			en_cnt : in std_logic;
+			clk : in std_logic;
+			reset_n : in std_logic;
+			carga_min : in std_logic;
+			carga_seg : in std_logic;
+			ent_p : in std_logic_vector(6 downto 0);
+			d_a : out std_logic_vector(6 downto 0); -- unidades de segundo 
+			d_b : out std_logic_vector(6 downto 0); -- decenas de segundo
+			d_c : out std_logic_vector(6 downto 0); -- unidades de minuto 
+			d_d : out std_logic_vector(6 downto 0)  -- decenas de minuto
+		);
+	end datapath;
+	
+	architecture behavioural of datapath is
+		
+		signal cnt_seg : std_logic_vector(6 downto 0);
+		signal cnt_min : std_logic_vector(6 downto 0);
+		signal co10seg : std_logic;
+		signal co10min : std_logic;
+		signal co6seg  : std_logic;
+		signal co6min  : std_logic;
+		signal co10seg : std_logic;
+		
+		
+		component ContadorDescM6 
+			port(
+				clk : in std_logic;
+				reset_n : in std_logic;
+				en : in std_logic;
+				carga : in std_logic;
+				e_p : in std_logic_vector(2 downto 0);
+				co : out std_logic;
+				s : out std_logic_vector(2 downto 0)
+				);
+		end component;
+		
+		component ContadorDescM10 
+			port(
+				clk : in std_logic;
+				reset_n : in std_logic;
+				en : in std_logic;
+				carga : in std_logic;
+				e_p : in std_logic_vector(3 downto 0);
+				co : out std_logic;
+				s : out std_logic_vector(3 downto 0)
+				)
+			

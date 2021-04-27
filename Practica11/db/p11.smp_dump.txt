@@ -1,0 +1,22 @@
+
+State Machine - |p11|Microondas:Micro|UnidadControl:i1|estado_act
+Name estado_act.final estado_act.findecuenta estado_act.puerta_abierta estado_act.encendido estado_act.carga_minutos estado_act.carga_segundos estado_act.reposo 
+estado_act.reposo 0 0 0 0 0 0 0 
+estado_act.carga_segundos 0 0 0 0 0 1 1 
+estado_act.carga_minutos 0 0 0 0 1 0 1 
+estado_act.encendido 0 0 0 1 0 0 1 
+estado_act.puerta_abierta 0 0 1 0 0 0 1 
+estado_act.findecuenta 0 1 0 0 0 0 1 
+estado_act.final 1 0 0 0 0 0 1 
+
+State Machine - |p11|DetectorFlanco:Detectorp2|est_act
+Name est_act.E2 est_act.E1 est_act.E0 
+est_act.E0 0 0 0 
+est_act.E1 0 1 1 
+est_act.E2 1 0 1 
+
+State Machine - |p11|DetectorFlanco:Detectorp1|est_act
+Name est_act.E2 est_act.E1 est_act.E0 
+est_act.E0 0 0 0 
+est_act.E1 0 1 1 
+est_act.E2 1 0 1 

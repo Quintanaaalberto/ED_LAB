@@ -1,0 +1,1335 @@
+TimeQuest Timing Analyzer report for p11
+Tue Apr 27 18:50:01 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'clk'
+ 12. Slow Model Hold: 'clk'
+ 13. Slow Model Minimum Pulse Width: 'clk'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Setup: 'clk'
+ 24. Fast Model Hold: 'clk'
+ 25. Fast Model Minimum Pulse Width: 'clk'
+ 26. Setup Times
+ 27. Hold Times
+ 28. Clock to Output Times
+ 29. Minimum Clock to Output Times
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Setup Transfers
+ 36. Hold Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths
+ 40. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; p11                                                               ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C20F484C7                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 186.71 MHz ; 186.71 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -4.356 ; -145.038      ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.445 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.631 ; -62.731               ;
++-------+--------+-----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk'                                                                                                                                                                                                        ;
++--------+-------------------------------------------------------------------------+-----------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                               ; To Node                                                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------------------------------------------------+-----------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -4.356 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.001      ; 5.395      ;
+; -4.356 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.001      ; 5.395      ;
+; -4.356 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.001      ; 5.395      ;
+; -4.356 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.001      ; 5.395      ;
+; -4.337 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; -0.004     ; 5.371      ;
+; -4.337 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; -0.004     ; 5.371      ;
+; -4.337 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; -0.004     ; 5.371      ;
+; -4.337 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; -0.004     ; 5.371      ;
+; -4.309 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; -0.004     ; 5.343      ;
+; -4.309 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; -0.004     ; 5.343      ;
+; -4.309 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; -0.004     ; 5.343      ;
+; -4.309 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; -0.004     ; 5.343      ;
+; -4.307 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.001      ; 5.346      ;
+; -4.278 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; 0.001      ; 5.317      ;
+; -4.259 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; -0.004     ; 5.293      ;
+; -4.254 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]      ; clk          ; clk         ; 1.000        ; 0.001      ; 5.293      ;
+; -4.231 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; -0.004     ; 5.265      ;
+; -4.229 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; 0.001      ; 5.268      ;
+; -4.217 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]      ; clk          ; clk         ; 1.000        ; 0.001      ; 5.256      ;
+; -4.215 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; -0.004     ; 5.249      ;
+; -4.215 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; -0.004     ; 5.249      ;
+; -4.215 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; -0.004     ; 5.249      ;
+; -4.215 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; -0.004     ; 5.249      ;
+; -4.210 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; 0.001      ; 5.249      ;
+; -4.191 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; -0.004     ; 5.225      ;
+; -4.163 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; -0.004     ; 5.197      ;
+; -4.161 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; 0.001      ; 5.200      ;
+; -4.138 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.006      ; 5.182      ;
+; -4.138 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.006      ; 5.182      ;
+; -4.138 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.006      ; 5.182      ;
+; -4.138 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.006      ; 5.182      ;
+; -4.137 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; -0.004     ; 5.171      ;
+; -4.127 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]      ; clk          ; clk         ; 1.000        ; 0.001      ; 5.166      ;
+; -4.094 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]      ; clk          ; clk         ; 1.000        ; 0.001      ; 5.133      ;
+; -4.090 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]      ; clk          ; clk         ; 1.000        ; 0.001      ; 5.129      ;
+; -4.069 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; -0.004     ; 5.103      ;
+; -4.060 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; 0.006      ; 5.104      ;
+; -4.059 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; -0.004     ; 5.093      ;
+; -4.059 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; -0.004     ; 5.093      ;
+; -4.059 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; -0.004     ; 5.093      ;
+; -4.059 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; -0.004     ; 5.093      ;
+; -4.057 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]      ; clk          ; clk         ; 1.000        ; 0.001      ; 5.096      ;
+; -4.052 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]      ; clk          ; clk         ; 1.000        ; 0.000      ; 5.090      ;
+; -4.045 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]      ; clk          ; clk         ; 1.000        ; 0.000      ; 5.083      ;
+; -4.014 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]      ; clk          ; clk         ; 1.000        ; 0.001      ; 5.053      ;
+; -4.012 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.001      ; 5.051      ;
+; -4.012 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.001      ; 5.051      ;
+; -4.012 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.001      ; 5.051      ;
+; -4.012 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.001      ; 5.051      ;
+; -4.008 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.001      ; 5.047      ;
+; -4.008 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.001      ; 5.047      ;
+; -4.008 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.001      ; 5.047      ;
+; -4.008 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.001      ; 5.047      ;
+; -3.992 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; 0.006      ; 5.036      ;
+; -3.981 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; -0.004     ; 5.015      ;
+; -3.977 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]      ; clk          ; clk         ; 1.000        ; 0.001      ; 5.016      ;
+; -3.961 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.001      ; 5.000      ;
+; -3.961 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.001      ; 5.000      ;
+; -3.961 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.001      ; 5.000      ;
+; -3.961 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.001      ; 5.000      ;
+; -3.952 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.006      ; 4.996      ;
+; -3.952 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.006      ; 4.996      ;
+; -3.952 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.006      ; 4.996      ;
+; -3.952 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.006      ; 4.996      ;
+; -3.949 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]      ; clk          ; clk         ; 1.000        ; 0.001      ; 4.988      ;
+; -3.939 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.977      ;
+; -3.939 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.000      ; 4.977      ;
+; -3.939 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.000      ; 4.977      ;
+; -3.939 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.000      ; 4.977      ;
+; -3.934 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; 0.001      ; 4.973      ;
+; -3.933 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[25]      ; clk          ; clk         ; 1.000        ; 0.001      ; 4.972      ;
+; -3.932 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.970      ;
+; -3.932 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.000      ; 4.970      ;
+; -3.932 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.000      ; 4.970      ;
+; -3.932 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.000      ; 4.970      ;
+; -3.930 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; 0.001      ; 4.969      ;
+; -3.917 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]      ; clk          ; clk         ; 1.000        ; 0.001      ; 4.956      ;
+; -3.913 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; -0.004     ; 4.947      ;
+; -3.909 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[21]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]      ; clk          ; clk         ; 1.000        ; -0.004     ; 4.943      ;
+; -3.900 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]      ; clk          ; clk         ; 1.000        ; 0.001      ; 4.939      ;
+; -3.893 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]      ; clk          ; clk         ; 1.000        ; 0.001      ; 4.932      ;
+; -3.885 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1] ; clk          ; clk         ; 1.000        ; -0.006     ; 4.917      ;
+; -3.885 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2] ; clk          ; clk         ; 1.000        ; -0.006     ; 4.917      ;
+; -3.883 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; 0.001      ; 4.922      ;
+; -3.878 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1] ; clk          ; clk         ; 1.000        ; -0.006     ; 4.910      ;
+; -3.878 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2] ; clk          ; clk         ; 1.000        ; -0.006     ; 4.910      ;
+; -3.874 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; 0.006      ; 4.918      ;
+; -3.868 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]      ; clk          ; clk         ; 1.000        ; 0.001      ; 4.907      ;
+; -3.866 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; 0.001      ; 4.905      ;
+; -3.866 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[22]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]      ; clk          ; clk         ; 1.000        ; 0.000      ; 4.904      ;
+; -3.862 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; 0.001      ; 4.901      ;
+; -3.861 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; 0.000      ; 4.899      ;
+; -3.856 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]      ; clk          ; clk         ; 1.000        ; 0.001      ; 4.895      ;
+; -3.854 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; 0.000      ; 4.892      ;
+; -3.822 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[25]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]      ; clk          ; clk         ; 1.000        ; 0.000      ; 4.860      ;
+; -3.820 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.001      ; 4.859      ;
+; -3.820 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.001      ; 4.859      ;
++--------+-------------------------------------------------------------------------+-----------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk'                                                                                                                                                                                                          ;
++-------+-------------------------------------------------------------------------+-------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                               ; To Node                                                                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------------------------------------------------+-------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.445 ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta             ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.639 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.925      ;
+; 0.642 ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.928      ;
+; 0.643 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.929      ;
+; 0.765 ; DetectorFlanco:Detectorp1|est_act.E1                                    ; DetectorFlanco:Detectorp1|est_act.E2                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.051      ;
+; 0.933 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.219      ;
+; 0.962 ; DetectorFlanco:Detectorp2|est_act.E1                                    ; DetectorFlanco:Detectorp2|est_act.E2                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.248      ;
+; 0.972 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.258      ;
+; 0.972 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.258      ;
+; 0.976 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.262      ;
+; 0.977 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.263      ;
+; 0.979 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.265      ;
+; 0.980 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.266      ;
+; 0.987 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.273      ;
+; 0.988 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.274      ;
+; 1.014 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.300      ;
+; 1.014 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.300      ;
+; 1.023 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.309      ;
+; 1.023 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.309      ;
+; 1.026 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.312      ;
+; 1.052 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.338      ;
+; 1.056 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.342      ;
+; 1.076 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.362      ;
+; 1.132 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.418      ;
+; 1.139 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.425      ;
+; 1.140 ; DetectorFlanco:Detectorp2|est_act.E2                                    ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; clk          ; clk         ; 0.000        ; -0.004     ; 1.422      ;
+; 1.146 ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                     ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.432      ;
+; 1.204 ; DetectorFlanco:Detectorp2|est_act.E2                                    ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos              ; clk          ; clk         ; 0.000        ; -0.004     ; 1.486      ;
+; 1.236 ; DetectorFlanco:Detectorp1|est_act.E2                                    ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; clk          ; clk         ; 0.000        ; -0.004     ; 1.518      ;
+; 1.271 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.557      ;
+; 1.276 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.562      ;
+; 1.281 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.567      ;
+; 1.285 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[12]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.571      ;
+; 1.285 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[13]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.571      ;
+; 1.285 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.571      ;
+; 1.285 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.571      ;
+; 1.285 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[16]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.571      ;
+; 1.285 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.571      ;
+; 1.285 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[18]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.571      ;
+; 1.285 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[19]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.571      ;
+; 1.285 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[20]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.571      ;
+; 1.285 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[22]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.571      ;
+; 1.285 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[23]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.571      ;
+; 1.285 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.571      ;
+; 1.285 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[25]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.571      ;
+; 1.362 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.648      ;
+; 1.395 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.681      ;
+; 1.404 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.690      ;
+; 1.409 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.695      ;
+; 1.412 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.698      ;
+; 1.436 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.722      ;
+; 1.447 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.733      ;
+; 1.447 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.733      ;
+; 1.450 ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos              ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ; clk          ; clk         ; 0.000        ; -0.006     ; 1.730      ;
+; 1.455 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.741      ;
+; 1.456 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.742      ;
+; 1.456 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.742      ;
+; 1.456 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.742      ;
+; 1.462 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.748      ;
+; 1.475 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.761      ;
+; 1.489 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.775      ;
+; 1.491 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.777      ;
+; 1.492 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.778      ;
+; 1.497 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.783      ;
+; 1.501 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.787      ;
+; 1.509 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.795      ;
+; 1.518 ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; clk          ; clk         ; 0.000        ; -0.006     ; 1.798      ;
+; 1.520 ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; clk          ; clk         ; 0.000        ; -0.006     ; 1.800      ;
+; 1.527 ; DetectorFlanco:Detectorp1|est_act.E2                                    ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos              ; clk          ; clk         ; 0.000        ; -0.004     ; 1.809      ;
+; 1.527 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.813      ;
+; 1.536 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.822      ;
+; 1.536 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.822      ;
+; 1.555 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.841      ;
+; 1.555 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.841      ;
+; 1.569 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.855      ;
+; 1.571 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.857      ;
+; 1.572 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.858      ;
+; 1.586 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[21]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[21]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.872      ;
+; 1.587 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.873      ;
+; 1.589 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.875      ;
+; 1.607 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.893      ;
+; 1.613 ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; clk          ; clk         ; 0.000        ; 0.004      ; 1.903      ;
+; 1.615 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.901      ;
+; 1.616 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.902      ;
+; 1.618 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[18]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[12]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.904      ;
+; 1.618 ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; clk          ; clk         ; 0.000        ; 0.004      ; 1.908      ;
+; 1.619 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; clk          ; clk         ; 0.000        ; -0.001     ; 1.904      ;
+; 1.619 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; clk          ; clk         ; 0.000        ; -0.001     ; 1.904      ;
+; 1.619 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; clk          ; clk         ; 0.000        ; -0.001     ; 1.904      ;
+; 1.619 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; clk          ; clk         ; 0.000        ; -0.001     ; 1.904      ;
+; 1.619 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; clk          ; clk         ; 0.000        ; -0.001     ; 1.904      ;
++-------+-------------------------------------------------------------------------+-------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                                                                                    ;
++--------+--------------+----------------+------------------+-------+------------+-------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                  ;
++--------+--------------+----------------+------------------+-------+------------+-------------------------------------------------------------------------+
+; -1.631 ; 1.000        ; 2.631          ; Port Rate        ; clk   ; Rise       ; clk                                                                     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco:Detectorp1|est_act.E1                                    ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco:Detectorp1|est_act.E1                                    ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco:Detectorp1|est_act.E2                                    ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco:Detectorp1|est_act.E2                                    ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco:Detectorp2|est_act.E1                                    ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco:Detectorp2|est_act.E1                                    ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco:Detectorp2|est_act.E2                                    ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco:Detectorp2|est_act.E2                                    ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos              ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos              ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta                ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta                ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta             ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta             ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                     ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[12]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[12]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[13]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[13]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[16]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[16]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[18]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[18]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[19]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[19]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[20]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[20]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[21]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[21]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[22]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[22]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[23]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[23]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[25]        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[25]        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ;
++--------+--------------+----------------+------------------+-------+------------+-------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; enc_temp  ; clk        ; 6.101 ; 6.101 ; Rise       ; clk             ;
+; ent_p[*]  ; clk        ; 3.885 ; 3.885 ; Rise       ; clk             ;
+;  ent_p[0] ; clk        ; 3.885 ; 3.885 ; Rise       ; clk             ;
+;  ent_p[1] ; clk        ; 3.846 ; 3.846 ; Rise       ; clk             ;
+;  ent_p[2] ; clk        ; 3.856 ; 3.856 ; Rise       ; clk             ;
+;  ent_p[3] ; clk        ; 3.719 ; 3.719 ; Rise       ; clk             ;
+;  ent_p[4] ; clk        ; 3.530 ; 3.530 ; Rise       ; clk             ;
+;  ent_p[5] ; clk        ; 3.798 ; 3.798 ; Rise       ; clk             ;
+;  ent_p[6] ; clk        ; 3.545 ; 3.545 ; Rise       ; clk             ;
+; p1        ; clk        ; 3.091 ; 3.091 ; Rise       ; clk             ;
+; p2        ; clk        ; 3.098 ; 3.098 ; Rise       ; clk             ;
+; puerta    ; clk        ; 5.652 ; 5.652 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; enc_temp  ; clk        ; -3.397 ; -3.397 ; Rise       ; clk             ;
+; ent_p[*]  ; clk        ; -3.015 ; -3.015 ; Rise       ; clk             ;
+;  ent_p[0] ; clk        ; -3.610 ; -3.610 ; Rise       ; clk             ;
+;  ent_p[1] ; clk        ; -3.442 ; -3.442 ; Rise       ; clk             ;
+;  ent_p[2] ; clk        ; -3.375 ; -3.375 ; Rise       ; clk             ;
+;  ent_p[3] ; clk        ; -3.469 ; -3.469 ; Rise       ; clk             ;
+;  ent_p[4] ; clk        ; -3.015 ; -3.015 ; Rise       ; clk             ;
+;  ent_p[5] ; clk        ; -3.491 ; -3.491 ; Rise       ; clk             ;
+;  ent_p[6] ; clk        ; -3.295 ; -3.295 ; Rise       ; clk             ;
+; p1        ; clk        ; -2.841 ; -2.841 ; Rise       ; clk             ;
+; p2        ; clk        ; -2.847 ; -2.847 ; Rise       ; clk             ;
+; puerta    ; clk        ; -3.133 ; -3.133 ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; abierta   ; clk        ; 6.571 ; 6.571 ; Rise       ; clk             ;
+; d_a[*]    ; clk        ; 8.375 ; 8.375 ; Rise       ; clk             ;
+;  d_a[0]   ; clk        ; 8.358 ; 8.358 ; Rise       ; clk             ;
+;  d_a[1]   ; clk        ; 8.315 ; 8.315 ; Rise       ; clk             ;
+;  d_a[2]   ; clk        ; 8.067 ; 8.067 ; Rise       ; clk             ;
+;  d_a[3]   ; clk        ; 8.107 ; 8.107 ; Rise       ; clk             ;
+;  d_a[4]   ; clk        ; 8.359 ; 8.359 ; Rise       ; clk             ;
+;  d_a[5]   ; clk        ; 8.110 ; 8.110 ; Rise       ; clk             ;
+;  d_a[6]   ; clk        ; 8.375 ; 8.375 ; Rise       ; clk             ;
+; d_b[*]    ; clk        ; 8.128 ; 8.128 ; Rise       ; clk             ;
+;  d_b[0]   ; clk        ; 8.022 ; 8.022 ; Rise       ; clk             ;
+;  d_b[1]   ; clk        ; 8.098 ; 8.098 ; Rise       ; clk             ;
+;  d_b[2]   ; clk        ; 8.051 ; 8.051 ; Rise       ; clk             ;
+;  d_b[3]   ; clk        ; 8.128 ; 8.128 ; Rise       ; clk             ;
+;  d_b[4]   ; clk        ; 8.078 ; 8.078 ; Rise       ; clk             ;
+;  d_b[5]   ; clk        ; 8.067 ; 8.067 ; Rise       ; clk             ;
+;  d_b[6]   ; clk        ; 8.120 ; 8.120 ; Rise       ; clk             ;
+; d_c[*]    ; clk        ; 8.358 ; 8.358 ; Rise       ; clk             ;
+;  d_c[0]   ; clk        ; 7.988 ; 7.988 ; Rise       ; clk             ;
+;  d_c[1]   ; clk        ; 7.984 ; 7.984 ; Rise       ; clk             ;
+;  d_c[2]   ; clk        ; 7.980 ; 7.980 ; Rise       ; clk             ;
+;  d_c[3]   ; clk        ; 8.019 ; 8.019 ; Rise       ; clk             ;
+;  d_c[4]   ; clk        ; 7.987 ; 7.987 ; Rise       ; clk             ;
+;  d_c[5]   ; clk        ; 8.261 ; 8.261 ; Rise       ; clk             ;
+;  d_c[6]   ; clk        ; 8.358 ; 8.358 ; Rise       ; clk             ;
+; d_d[*]    ; clk        ; 8.347 ; 8.347 ; Rise       ; clk             ;
+;  d_d[0]   ; clk        ; 8.347 ; 8.347 ; Rise       ; clk             ;
+;  d_d[1]   ; clk        ; 7.983 ; 7.983 ; Rise       ; clk             ;
+;  d_d[2]   ; clk        ; 7.992 ; 7.992 ; Rise       ; clk             ;
+;  d_d[3]   ; clk        ; 8.340 ; 8.340 ; Rise       ; clk             ;
+;  d_d[4]   ; clk        ; 7.875 ; 7.875 ; Rise       ; clk             ;
+;  d_d[5]   ; clk        ; 8.032 ; 8.032 ; Rise       ; clk             ;
+;  d_d[6]   ; clk        ; 7.977 ; 7.977 ; Rise       ; clk             ;
+; fin       ; clk        ; 6.581 ; 6.581 ; Rise       ; clk             ;
+; horno_on  ; clk        ; 7.206 ; 7.206 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; abierta   ; clk        ; 6.571 ; 6.571 ; Rise       ; clk             ;
+; d_a[*]    ; clk        ; 7.516 ; 7.516 ; Rise       ; clk             ;
+;  d_a[0]   ; clk        ; 7.759 ; 7.759 ; Rise       ; clk             ;
+;  d_a[1]   ; clk        ; 7.764 ; 7.764 ; Rise       ; clk             ;
+;  d_a[2]   ; clk        ; 7.516 ; 7.516 ; Rise       ; clk             ;
+;  d_a[3]   ; clk        ; 7.520 ; 7.520 ; Rise       ; clk             ;
+;  d_a[4]   ; clk        ; 7.763 ; 7.763 ; Rise       ; clk             ;
+;  d_a[5]   ; clk        ; 7.517 ; 7.517 ; Rise       ; clk             ;
+;  d_a[6]   ; clk        ; 7.778 ; 7.778 ; Rise       ; clk             ;
+; d_b[*]    ; clk        ; 7.683 ; 7.683 ; Rise       ; clk             ;
+;  d_b[0]   ; clk        ; 7.683 ; 7.683 ; Rise       ; clk             ;
+;  d_b[1]   ; clk        ; 7.789 ; 7.789 ; Rise       ; clk             ;
+;  d_b[2]   ; clk        ; 7.712 ; 7.712 ; Rise       ; clk             ;
+;  d_b[3]   ; clk        ; 7.788 ; 7.788 ; Rise       ; clk             ;
+;  d_b[4]   ; clk        ; 7.797 ; 7.797 ; Rise       ; clk             ;
+;  d_b[5]   ; clk        ; 7.728 ; 7.728 ; Rise       ; clk             ;
+;  d_b[6]   ; clk        ; 7.781 ; 7.781 ; Rise       ; clk             ;
+; d_c[*]    ; clk        ; 7.654 ; 7.654 ; Rise       ; clk             ;
+;  d_c[0]   ; clk        ; 7.663 ; 7.663 ; Rise       ; clk             ;
+;  d_c[1]   ; clk        ; 7.658 ; 7.658 ; Rise       ; clk             ;
+;  d_c[2]   ; clk        ; 7.654 ; 7.654 ; Rise       ; clk             ;
+;  d_c[3]   ; clk        ; 7.693 ; 7.693 ; Rise       ; clk             ;
+;  d_c[4]   ; clk        ; 7.673 ; 7.673 ; Rise       ; clk             ;
+;  d_c[5]   ; clk        ; 7.936 ; 7.936 ; Rise       ; clk             ;
+;  d_c[6]   ; clk        ; 8.040 ; 8.040 ; Rise       ; clk             ;
+; d_d[*]    ; clk        ; 7.490 ; 7.490 ; Rise       ; clk             ;
+;  d_d[0]   ; clk        ; 7.913 ; 7.913 ; Rise       ; clk             ;
+;  d_d[1]   ; clk        ; 7.555 ; 7.555 ; Rise       ; clk             ;
+;  d_d[2]   ; clk        ; 7.490 ; 7.490 ; Rise       ; clk             ;
+;  d_d[3]   ; clk        ; 7.876 ; 7.876 ; Rise       ; clk             ;
+;  d_d[4]   ; clk        ; 7.527 ; 7.527 ; Rise       ; clk             ;
+;  d_d[5]   ; clk        ; 7.572 ; 7.572 ; Rise       ; clk             ;
+;  d_d[6]   ; clk        ; 7.524 ; 7.524 ; Rise       ; clk             ;
+; fin       ; clk        ; 6.581 ; 6.581 ; Rise       ; clk             ;
+; horno_on  ; clk        ; 7.206 ; 7.206 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------+
+; Fast Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -1.163 ; -31.464       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.215 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.380 ; -51.380               ;
++-------+--------+-----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk'                                                                                                                                                                                                        ;
++--------+-------------------------------------------------------------------------+-----------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                               ; To Node                                                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------------------------------------------------+-----------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.163 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]      ; clk          ; clk         ; 1.000        ; 0.001      ; 2.196      ;
+; -1.153 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; -0.004     ; 2.181      ;
+; -1.153 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; -0.004     ; 2.181      ;
+; -1.153 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; -0.004     ; 2.181      ;
+; -1.153 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; -0.004     ; 2.181      ;
+; -1.152 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.001      ; 2.185      ;
+; -1.152 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.001      ; 2.185      ;
+; -1.152 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.001      ; 2.185      ;
+; -1.152 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.001      ; 2.185      ;
+; -1.147 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; -0.004     ; 2.175      ;
+; -1.147 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; -0.004     ; 2.175      ;
+; -1.147 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; -0.004     ; 2.175      ;
+; -1.147 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; -0.004     ; 2.175      ;
+; -1.142 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.001      ; 2.175      ;
+; -1.142 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.001      ; 2.175      ;
+; -1.142 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.001      ; 2.175      ;
+; -1.142 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.001      ; 2.175      ;
+; -1.111 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]      ; clk          ; clk         ; 1.000        ; 0.001      ; 2.144      ;
+; -1.097 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]      ; clk          ; clk         ; 1.000        ; 0.001      ; 2.130      ;
+; -1.097 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; -0.004     ; 2.125      ;
+; -1.097 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; -0.004     ; 2.125      ;
+; -1.097 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; -0.004     ; 2.125      ;
+; -1.097 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; -0.004     ; 2.125      ;
+; -1.093 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]      ; clk          ; clk         ; 1.000        ; 0.001      ; 2.126      ;
+; -1.058 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]      ; clk          ; clk         ; 1.000        ; 0.001      ; 2.091      ;
+; -1.046 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.006      ; 2.084      ;
+; -1.046 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.006      ; 2.084      ;
+; -1.046 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.006      ; 2.084      ;
+; -1.046 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.006      ; 2.084      ;
+; -1.045 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]      ; clk          ; clk         ; 1.000        ; 0.001      ; 2.078      ;
+; -1.043 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; -0.004     ; 2.071      ;
+; -1.043 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; -0.004     ; 2.071      ;
+; -1.043 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; -0.004     ; 2.071      ;
+; -1.043 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; -0.004     ; 2.071      ;
+; -1.027 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]      ; clk          ; clk         ; 1.000        ; 0.001      ; 2.060      ;
+; -1.020 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[25]      ; clk          ; clk         ; 1.000        ; 0.001      ; 2.053      ;
+; -1.019 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.001      ; 2.052      ;
+; -1.019 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.001      ; 2.052      ;
+; -1.019 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.001      ; 2.052      ;
+; -1.019 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.001      ; 2.052      ;
+; -1.016 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.006      ; 2.054      ;
+; -1.016 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.006      ; 2.054      ;
+; -1.016 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.006      ; 2.054      ;
+; -1.016 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.006      ; 2.054      ;
+; -1.006 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.001      ; 2.039      ;
+; -1.006 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.001      ; 2.039      ;
+; -1.006 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.001      ; 2.039      ;
+; -1.006 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.001      ; 2.039      ;
+; -1.003 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; -0.004     ; 2.031      ;
+; -1.002 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]      ; clk          ; clk         ; 1.000        ; 0.001      ; 2.035      ;
+; -1.002 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; 0.001      ; 2.035      ;
+; -0.997 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; -0.004     ; 2.025      ;
+; -0.992 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]      ; clk          ; clk         ; 1.000        ; 0.001      ; 2.025      ;
+; -0.992 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; 0.001      ; 2.025      ;
+; -0.989 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; -0.004     ; 2.017      ;
+; -0.989 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.001      ; 2.022      ;
+; -0.989 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.001      ; 2.022      ;
+; -0.989 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.001      ; 2.022      ;
+; -0.989 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.001      ; 2.022      ;
+; -0.988 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; 0.001      ; 2.021      ;
+; -0.983 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; -0.004     ; 2.011      ;
+; -0.982 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.001      ; 2.015      ;
+; -0.982 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.001      ; 2.015      ;
+; -0.982 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.001      ; 2.015      ;
+; -0.982 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.001      ; 2.015      ;
+; -0.978 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; 0.001      ; 2.011      ;
+; -0.968 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[25]      ; clk          ; clk         ; 1.000        ; 0.001      ; 2.001      ;
+; -0.964 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.996      ;
+; -0.964 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.000      ; 1.996      ;
+; -0.964 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.000      ; 1.996      ;
+; -0.964 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.996      ;
+; -0.963 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[23]      ; clk          ; clk         ; 1.000        ; 0.001      ; 1.996      ;
+; -0.954 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.986      ;
+; -0.954 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.000      ; 1.986      ;
+; -0.954 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.000      ; 1.986      ;
+; -0.954 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.986      ;
+; -0.950 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[25]      ; clk          ; clk         ; 1.000        ; 0.001      ; 1.983      ;
+; -0.947 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta           ; clk          ; clk         ; 1.000        ; -0.004     ; 1.975      ;
+; -0.945 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.001      ; 1.978      ;
+; -0.945 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.001      ; 1.978      ;
+; -0.945 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.001      ; 1.978      ;
+; -0.945 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.001      ; 1.978      ;
+; -0.936 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]      ; clk          ; clk         ; 1.000        ; 0.001      ; 1.969      ;
+; -0.933 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                ; clk          ; clk         ; 1.000        ; -0.004     ; 1.961      ;
+; -0.932 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1] ; clk          ; clk         ; 1.000        ; -0.006     ; 1.958      ;
+; -0.932 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2] ; clk          ; clk         ; 1.000        ; -0.006     ; 1.958      ;
+; -0.931 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[21]        ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; -0.003     ; 1.960      ;
+; -0.931 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[21]        ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; -0.003     ; 1.960      ;
+; -0.931 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[21]        ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; -0.003     ; 1.960      ;
+; -0.931 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[21]        ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; -0.003     ; 1.960      ;
+; -0.928 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                   ; clk          ; clk         ; 1.000        ; 0.006      ; 1.966      ;
+; -0.928 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos            ; clk          ; clk         ; 1.000        ; 0.006      ; 1.966      ;
+; -0.928 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos           ; clk          ; clk         ; 1.000        ; 0.006      ; 1.966      ;
+; -0.928 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta              ; clk          ; clk         ; 1.000        ; 0.006      ; 1.966      ;
+; -0.923 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]      ; clk          ; clk         ; 1.000        ; 0.001      ; 1.956      ;
+; -0.922 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1] ; clk          ; clk         ; 1.000        ; -0.006     ; 1.948      ;
+; -0.922 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2] ; clk          ; clk         ; 1.000        ; -0.006     ; 1.948      ;
+; -0.917 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.949      ;
+; -0.915 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[18]      ; clk          ; clk         ; 1.000        ; 0.001      ; 1.948      ;
+; -0.915 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[25]      ; clk          ; clk         ; 1.000        ; 0.001      ; 1.948      ;
++--------+-------------------------------------------------------------------------+-----------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk'                                                                                                                                                                                                          ;
++-------+-------------------------------------------------------------------------+-------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                               ; To Node                                                                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------------------------------------------------+-------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta             ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.249 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.401      ;
+; 0.251 ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.403      ;
+; 0.251 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.403      ;
+; 0.315 ; DetectorFlanco:Detectorp1|est_act.E1                                    ; DetectorFlanco:Detectorp1|est_act.E2                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.467      ;
+; 0.358 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.358 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.361 ; DetectorFlanco:Detectorp2|est_act.E1                                    ; DetectorFlanco:Detectorp2|est_act.E2                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.363 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
+; 0.364 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.516      ;
+; 0.367 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.371 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.372 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
+; 0.373 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.525      ;
+; 0.378 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.388 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.540      ;
+; 0.392 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.544      ;
+; 0.404 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.556      ;
+; 0.424 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.576      ;
+; 0.433 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.585      ;
+; 0.453 ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                     ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.605      ;
+; 0.468 ; DetectorFlanco:Detectorp2|est_act.E2                                    ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; clk          ; clk         ; 0.000        ; -0.004     ; 0.616      ;
+; 0.471 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.623      ;
+; 0.471 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.623      ;
+; 0.475 ; DetectorFlanco:Detectorp2|est_act.E2                                    ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos              ; clk          ; clk         ; 0.000        ; -0.004     ; 0.623      ;
+; 0.477 ; DetectorFlanco:Detectorp1|est_act.E2                                    ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; clk          ; clk         ; 0.000        ; -0.004     ; 0.625      ;
+; 0.484 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.636      ;
+; 0.495 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.647      ;
+; 0.496 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.648      ;
+; 0.501 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.653      ;
+; 0.502 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.654      ;
+; 0.508 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.660      ;
+; 0.512 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.664      ;
+; 0.513 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.665      ;
+; 0.518 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.518 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.518 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.530 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.682      ;
+; 0.530 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.682      ;
+; 0.536 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.688      ;
+; 0.536 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.688      ;
+; 0.537 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.689      ;
+; 0.537 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.689      ;
+; 0.538 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.690      ;
+; 0.544 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.696      ;
+; 0.548 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.700      ;
+; 0.553 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.705      ;
+; 0.553 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.705      ;
+; 0.556 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.708      ;
+; 0.563 ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos              ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ; clk          ; clk         ; 0.000        ; -0.006     ; 0.709      ;
+; 0.565 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.717      ;
+; 0.566 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.718      ;
+; 0.571 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.723      ;
+; 0.571 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.723      ;
+; 0.572 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.724      ;
+; 0.580 ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ; clk          ; clk         ; 0.000        ; -0.006     ; 0.726      ;
+; 0.582 ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; clk          ; clk         ; 0.000        ; -0.006     ; 0.728      ;
+; 0.582 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.734      ;
+; 0.588 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.740      ;
+; 0.589 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.741      ;
+; 0.591 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.743      ;
+; 0.592 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.744      ;
+; 0.595 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[21]        ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[21]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.747      ;
+; 0.596 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[12]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.596 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[13]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.596 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.596 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.596 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[16]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.596 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.596 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[18]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.596 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[19]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.596 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[20]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.596 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[22]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.596 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[23]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.596 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.596 ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[25]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.600 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.752      ;
+; 0.605 ; DetectorFlanco:Detectorp1|est_act.E2                                    ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos              ; clk          ; clk         ; 0.000        ; -0.004     ; 0.753      ;
+; 0.606 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.758      ;
+; 0.612 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.764      ;
+; 0.614 ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.766      ;
+; 0.617 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.769      ;
+; 0.619 ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; clk          ; clk         ; 0.000        ; 0.004      ; 0.775      ;
+; 0.621 ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ; clk          ; clk         ; 0.000        ; 0.004      ; 0.777      ;
+; 0.623 ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.775      ;
+; 0.628 ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.780      ;
++-------+-------------------------------------------------------------------------+-------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                                                                                    ;
++--------+--------------+----------------+------------------+-------+------------+-------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                  ;
++--------+--------------+----------------+------------------+-------+------------+-------------------------------------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco:Detectorp1|est_act.E1                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco:Detectorp1|est_act.E1                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco:Detectorp1|est_act.E2                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco:Detectorp1|est_act.E2                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco:Detectorp2|est_act.E1                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco:Detectorp2|est_act.E1                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco:Detectorp2|est_act.E2                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco:Detectorp2|est_act.E2                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.carga_minutos              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.carga_segundos             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.encendido                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.findecuenta                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.puerta_abierta             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|UnidadControl:i1|estado_act.reposo                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[0]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[10]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[11]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[12]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[12]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[13]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[13]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[14]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[15]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[16]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[16]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[17]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[18]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[18]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[19]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[19]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[1]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[20]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[20]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[21]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[21]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[22]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[22]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[23]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[23]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[24]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[25]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[25]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[2]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[3]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[4]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[5]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[6]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[7]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[8]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContAscM50:contadorM50|contador[9]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10min|contador[3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM10:contadorM10sec|contador[3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[0]   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[1]   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6min|contador[2]   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[0]   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[1]   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Microondas:Micro|datapath:i2|ContadorDescM6:contadorM6seg|contador[2]   ;
++--------+--------------+----------------+------------------+-------+------------+-------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; enc_temp  ; clk        ; 2.675 ; 2.675 ; Rise       ; clk             ;
+; ent_p[*]  ; clk        ; 1.775 ; 1.775 ; Rise       ; clk             ;
+;  ent_p[0] ; clk        ; 1.747 ; 1.747 ; Rise       ; clk             ;
+;  ent_p[1] ; clk        ; 1.766 ; 1.766 ; Rise       ; clk             ;
+;  ent_p[2] ; clk        ; 1.775 ; 1.775 ; Rise       ; clk             ;
+;  ent_p[3] ; clk        ; 1.684 ; 1.684 ; Rise       ; clk             ;
+;  ent_p[4] ; clk        ; 1.665 ; 1.665 ; Rise       ; clk             ;
+;  ent_p[5] ; clk        ; 1.736 ; 1.736 ; Rise       ; clk             ;
+;  ent_p[6] ; clk        ; 1.639 ; 1.639 ; Rise       ; clk             ;
+; p1        ; clk        ; 1.449 ; 1.449 ; Rise       ; clk             ;
+; p2        ; clk        ; 1.452 ; 1.452 ; Rise       ; clk             ;
+; puerta    ; clk        ; 2.507 ; 2.507 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; enc_temp  ; clk        ; -1.547 ; -1.547 ; Rise       ; clk             ;
+; ent_p[*]  ; clk        ; -1.448 ; -1.448 ; Rise       ; clk             ;
+;  ent_p[0] ; clk        ; -1.607 ; -1.607 ; Rise       ; clk             ;
+;  ent_p[1] ; clk        ; -1.543 ; -1.543 ; Rise       ; clk             ;
+;  ent_p[2] ; clk        ; -1.526 ; -1.526 ; Rise       ; clk             ;
+;  ent_p[3] ; clk        ; -1.542 ; -1.542 ; Rise       ; clk             ;
+;  ent_p[4] ; clk        ; -1.448 ; -1.448 ; Rise       ; clk             ;
+;  ent_p[5] ; clk        ; -1.575 ; -1.575 ; Rise       ; clk             ;
+;  ent_p[6] ; clk        ; -1.517 ; -1.517 ; Rise       ; clk             ;
+; p1        ; clk        ; -1.328 ; -1.328 ; Rise       ; clk             ;
+; p2        ; clk        ; -1.328 ; -1.328 ; Rise       ; clk             ;
+; puerta    ; clk        ; -1.438 ; -1.438 ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; abierta   ; clk        ; 3.609 ; 3.609 ; Rise       ; clk             ;
+; d_a[*]    ; clk        ; 4.346 ; 4.346 ; Rise       ; clk             ;
+;  d_a[0]   ; clk        ; 4.326 ; 4.326 ; Rise       ; clk             ;
+;  d_a[1]   ; clk        ; 4.318 ; 4.318 ; Rise       ; clk             ;
+;  d_a[2]   ; clk        ; 4.243 ; 4.243 ; Rise       ; clk             ;
+;  d_a[3]   ; clk        ; 4.245 ; 4.245 ; Rise       ; clk             ;
+;  d_a[4]   ; clk        ; 4.330 ; 4.330 ; Rise       ; clk             ;
+;  d_a[5]   ; clk        ; 4.243 ; 4.243 ; Rise       ; clk             ;
+;  d_a[6]   ; clk        ; 4.346 ; 4.346 ; Rise       ; clk             ;
+; d_b[*]    ; clk        ; 4.239 ; 4.239 ; Rise       ; clk             ;
+;  d_b[0]   ; clk        ; 4.139 ; 4.139 ; Rise       ; clk             ;
+;  d_b[1]   ; clk        ; 4.226 ; 4.226 ; Rise       ; clk             ;
+;  d_b[2]   ; clk        ; 4.154 ; 4.154 ; Rise       ; clk             ;
+;  d_b[3]   ; clk        ; 4.224 ; 4.224 ; Rise       ; clk             ;
+;  d_b[4]   ; clk        ; 4.239 ; 4.239 ; Rise       ; clk             ;
+;  d_b[5]   ; clk        ; 4.165 ; 4.165 ; Rise       ; clk             ;
+;  d_b[6]   ; clk        ; 4.227 ; 4.227 ; Rise       ; clk             ;
+; d_c[*]    ; clk        ; 4.294 ; 4.294 ; Rise       ; clk             ;
+;  d_c[0]   ; clk        ; 4.130 ; 4.130 ; Rise       ; clk             ;
+;  d_c[1]   ; clk        ; 4.131 ; 4.131 ; Rise       ; clk             ;
+;  d_c[2]   ; clk        ; 4.134 ; 4.134 ; Rise       ; clk             ;
+;  d_c[3]   ; clk        ; 4.146 ; 4.146 ; Rise       ; clk             ;
+;  d_c[4]   ; clk        ; 4.124 ; 4.124 ; Rise       ; clk             ;
+;  d_c[5]   ; clk        ; 4.242 ; 4.242 ; Rise       ; clk             ;
+;  d_c[6]   ; clk        ; 4.294 ; 4.294 ; Rise       ; clk             ;
+; d_d[*]    ; clk        ; 4.281 ; 4.281 ; Rise       ; clk             ;
+;  d_d[0]   ; clk        ; 4.281 ; 4.281 ; Rise       ; clk             ;
+;  d_d[1]   ; clk        ; 4.128 ; 4.128 ; Rise       ; clk             ;
+;  d_d[2]   ; clk        ; 4.117 ; 4.117 ; Rise       ; clk             ;
+;  d_d[3]   ; clk        ; 4.260 ; 4.260 ; Rise       ; clk             ;
+;  d_d[4]   ; clk        ; 4.100 ; 4.100 ; Rise       ; clk             ;
+;  d_d[5]   ; clk        ; 4.141 ; 4.141 ; Rise       ; clk             ;
+;  d_d[6]   ; clk        ; 4.105 ; 4.105 ; Rise       ; clk             ;
+; fin       ; clk        ; 3.625 ; 3.625 ; Rise       ; clk             ;
+; horno_on  ; clk        ; 3.861 ; 3.861 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; abierta   ; clk        ; 3.609 ; 3.609 ; Rise       ; clk             ;
+; d_a[*]    ; clk        ; 4.033 ; 4.033 ; Rise       ; clk             ;
+;  d_a[0]   ; clk        ; 4.111 ; 4.111 ; Rise       ; clk             ;
+;  d_a[1]   ; clk        ; 4.117 ; 4.117 ; Rise       ; clk             ;
+;  d_a[2]   ; clk        ; 4.038 ; 4.038 ; Rise       ; clk             ;
+;  d_a[3]   ; clk        ; 4.043 ; 4.043 ; Rise       ; clk             ;
+;  d_a[4]   ; clk        ; 4.116 ; 4.116 ; Rise       ; clk             ;
+;  d_a[5]   ; clk        ; 4.033 ; 4.033 ; Rise       ; clk             ;
+;  d_a[6]   ; clk        ; 4.131 ; 4.131 ; Rise       ; clk             ;
+; d_b[*]    ; clk        ; 4.026 ; 4.026 ; Rise       ; clk             ;
+;  d_b[0]   ; clk        ; 4.026 ; 4.026 ; Rise       ; clk             ;
+;  d_b[1]   ; clk        ; 4.113 ; 4.113 ; Rise       ; clk             ;
+;  d_b[2]   ; clk        ; 4.041 ; 4.041 ; Rise       ; clk             ;
+;  d_b[3]   ; clk        ; 4.111 ; 4.111 ; Rise       ; clk             ;
+;  d_b[4]   ; clk        ; 4.121 ; 4.121 ; Rise       ; clk             ;
+;  d_b[5]   ; clk        ; 4.052 ; 4.052 ; Rise       ; clk             ;
+;  d_b[6]   ; clk        ; 4.109 ; 4.109 ; Rise       ; clk             ;
+; d_c[*]    ; clk        ; 4.009 ; 4.009 ; Rise       ; clk             ;
+;  d_c[0]   ; clk        ; 4.018 ; 4.018 ; Rise       ; clk             ;
+;  d_c[1]   ; clk        ; 4.015 ; 4.015 ; Rise       ; clk             ;
+;  d_c[2]   ; clk        ; 4.009 ; 4.009 ; Rise       ; clk             ;
+;  d_c[3]   ; clk        ; 4.035 ; 4.035 ; Rise       ; clk             ;
+;  d_c[4]   ; clk        ; 4.013 ; 4.013 ; Rise       ; clk             ;
+;  d_c[5]   ; clk        ; 4.123 ; 4.123 ; Rise       ; clk             ;
+;  d_c[6]   ; clk        ; 4.173 ; 4.173 ; Rise       ; clk             ;
+; d_d[*]    ; clk        ; 3.945 ; 3.945 ; Rise       ; clk             ;
+;  d_d[0]   ; clk        ; 4.106 ; 4.106 ; Rise       ; clk             ;
+;  d_d[1]   ; clk        ; 3.969 ; 3.969 ; Rise       ; clk             ;
+;  d_d[2]   ; clk        ; 3.956 ; 3.956 ; Rise       ; clk             ;
+;  d_d[3]   ; clk        ; 4.088 ; 4.088 ; Rise       ; clk             ;
+;  d_d[4]   ; clk        ; 3.947 ; 3.947 ; Rise       ; clk             ;
+;  d_d[5]   ; clk        ; 3.978 ; 3.978 ; Rise       ; clk             ;
+;  d_d[6]   ; clk        ; 3.945 ; 3.945 ; Rise       ; clk             ;
+; fin       ; clk        ; 3.625 ; 3.625 ; Rise       ; clk             ;
+; horno_on  ; clk        ; 3.861 ; 3.861 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+----------+-------+----------+---------+---------------------+
+; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -4.356   ; 0.215 ; N/A      ; N/A     ; -1.631              ;
+;  clk             ; -4.356   ; 0.215 ; N/A      ; N/A     ; -1.631              ;
+; Design-wide TNS  ; -145.038 ; 0.0   ; 0.0      ; 0.0     ; -62.731             ;
+;  clk             ; -145.038 ; 0.000 ; N/A      ; N/A     ; -62.731             ;
++------------------+----------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; enc_temp  ; clk        ; 6.101 ; 6.101 ; Rise       ; clk             ;
+; ent_p[*]  ; clk        ; 3.885 ; 3.885 ; Rise       ; clk             ;
+;  ent_p[0] ; clk        ; 3.885 ; 3.885 ; Rise       ; clk             ;
+;  ent_p[1] ; clk        ; 3.846 ; 3.846 ; Rise       ; clk             ;
+;  ent_p[2] ; clk        ; 3.856 ; 3.856 ; Rise       ; clk             ;
+;  ent_p[3] ; clk        ; 3.719 ; 3.719 ; Rise       ; clk             ;
+;  ent_p[4] ; clk        ; 3.530 ; 3.530 ; Rise       ; clk             ;
+;  ent_p[5] ; clk        ; 3.798 ; 3.798 ; Rise       ; clk             ;
+;  ent_p[6] ; clk        ; 3.545 ; 3.545 ; Rise       ; clk             ;
+; p1        ; clk        ; 3.091 ; 3.091 ; Rise       ; clk             ;
+; p2        ; clk        ; 3.098 ; 3.098 ; Rise       ; clk             ;
+; puerta    ; clk        ; 5.652 ; 5.652 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; enc_temp  ; clk        ; -1.547 ; -1.547 ; Rise       ; clk             ;
+; ent_p[*]  ; clk        ; -1.448 ; -1.448 ; Rise       ; clk             ;
+;  ent_p[0] ; clk        ; -1.607 ; -1.607 ; Rise       ; clk             ;
+;  ent_p[1] ; clk        ; -1.543 ; -1.543 ; Rise       ; clk             ;
+;  ent_p[2] ; clk        ; -1.526 ; -1.526 ; Rise       ; clk             ;
+;  ent_p[3] ; clk        ; -1.542 ; -1.542 ; Rise       ; clk             ;
+;  ent_p[4] ; clk        ; -1.448 ; -1.448 ; Rise       ; clk             ;
+;  ent_p[5] ; clk        ; -1.575 ; -1.575 ; Rise       ; clk             ;
+;  ent_p[6] ; clk        ; -1.517 ; -1.517 ; Rise       ; clk             ;
+; p1        ; clk        ; -1.328 ; -1.328 ; Rise       ; clk             ;
+; p2        ; clk        ; -1.328 ; -1.328 ; Rise       ; clk             ;
+; puerta    ; clk        ; -1.438 ; -1.438 ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; abierta   ; clk        ; 6.571 ; 6.571 ; Rise       ; clk             ;
+; d_a[*]    ; clk        ; 8.375 ; 8.375 ; Rise       ; clk             ;
+;  d_a[0]   ; clk        ; 8.358 ; 8.358 ; Rise       ; clk             ;
+;  d_a[1]   ; clk        ; 8.315 ; 8.315 ; Rise       ; clk             ;
+;  d_a[2]   ; clk        ; 8.067 ; 8.067 ; Rise       ; clk             ;
+;  d_a[3]   ; clk        ; 8.107 ; 8.107 ; Rise       ; clk             ;
+;  d_a[4]   ; clk        ; 8.359 ; 8.359 ; Rise       ; clk             ;
+;  d_a[5]   ; clk        ; 8.110 ; 8.110 ; Rise       ; clk             ;
+;  d_a[6]   ; clk        ; 8.375 ; 8.375 ; Rise       ; clk             ;
+; d_b[*]    ; clk        ; 8.128 ; 8.128 ; Rise       ; clk             ;
+;  d_b[0]   ; clk        ; 8.022 ; 8.022 ; Rise       ; clk             ;
+;  d_b[1]   ; clk        ; 8.098 ; 8.098 ; Rise       ; clk             ;
+;  d_b[2]   ; clk        ; 8.051 ; 8.051 ; Rise       ; clk             ;
+;  d_b[3]   ; clk        ; 8.128 ; 8.128 ; Rise       ; clk             ;
+;  d_b[4]   ; clk        ; 8.078 ; 8.078 ; Rise       ; clk             ;
+;  d_b[5]   ; clk        ; 8.067 ; 8.067 ; Rise       ; clk             ;
+;  d_b[6]   ; clk        ; 8.120 ; 8.120 ; Rise       ; clk             ;
+; d_c[*]    ; clk        ; 8.358 ; 8.358 ; Rise       ; clk             ;
+;  d_c[0]   ; clk        ; 7.988 ; 7.988 ; Rise       ; clk             ;
+;  d_c[1]   ; clk        ; 7.984 ; 7.984 ; Rise       ; clk             ;
+;  d_c[2]   ; clk        ; 7.980 ; 7.980 ; Rise       ; clk             ;
+;  d_c[3]   ; clk        ; 8.019 ; 8.019 ; Rise       ; clk             ;
+;  d_c[4]   ; clk        ; 7.987 ; 7.987 ; Rise       ; clk             ;
+;  d_c[5]   ; clk        ; 8.261 ; 8.261 ; Rise       ; clk             ;
+;  d_c[6]   ; clk        ; 8.358 ; 8.358 ; Rise       ; clk             ;
+; d_d[*]    ; clk        ; 8.347 ; 8.347 ; Rise       ; clk             ;
+;  d_d[0]   ; clk        ; 8.347 ; 8.347 ; Rise       ; clk             ;
+;  d_d[1]   ; clk        ; 7.983 ; 7.983 ; Rise       ; clk             ;
+;  d_d[2]   ; clk        ; 7.992 ; 7.992 ; Rise       ; clk             ;
+;  d_d[3]   ; clk        ; 8.340 ; 8.340 ; Rise       ; clk             ;
+;  d_d[4]   ; clk        ; 7.875 ; 7.875 ; Rise       ; clk             ;
+;  d_d[5]   ; clk        ; 8.032 ; 8.032 ; Rise       ; clk             ;
+;  d_d[6]   ; clk        ; 7.977 ; 7.977 ; Rise       ; clk             ;
+; fin       ; clk        ; 6.581 ; 6.581 ; Rise       ; clk             ;
+; horno_on  ; clk        ; 7.206 ; 7.206 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; abierta   ; clk        ; 3.609 ; 3.609 ; Rise       ; clk             ;
+; d_a[*]    ; clk        ; 4.033 ; 4.033 ; Rise       ; clk             ;
+;  d_a[0]   ; clk        ; 4.111 ; 4.111 ; Rise       ; clk             ;
+;  d_a[1]   ; clk        ; 4.117 ; 4.117 ; Rise       ; clk             ;
+;  d_a[2]   ; clk        ; 4.038 ; 4.038 ; Rise       ; clk             ;
+;  d_a[3]   ; clk        ; 4.043 ; 4.043 ; Rise       ; clk             ;
+;  d_a[4]   ; clk        ; 4.116 ; 4.116 ; Rise       ; clk             ;
+;  d_a[5]   ; clk        ; 4.033 ; 4.033 ; Rise       ; clk             ;
+;  d_a[6]   ; clk        ; 4.131 ; 4.131 ; Rise       ; clk             ;
+; d_b[*]    ; clk        ; 4.026 ; 4.026 ; Rise       ; clk             ;
+;  d_b[0]   ; clk        ; 4.026 ; 4.026 ; Rise       ; clk             ;
+;  d_b[1]   ; clk        ; 4.113 ; 4.113 ; Rise       ; clk             ;
+;  d_b[2]   ; clk        ; 4.041 ; 4.041 ; Rise       ; clk             ;
+;  d_b[3]   ; clk        ; 4.111 ; 4.111 ; Rise       ; clk             ;
+;  d_b[4]   ; clk        ; 4.121 ; 4.121 ; Rise       ; clk             ;
+;  d_b[5]   ; clk        ; 4.052 ; 4.052 ; Rise       ; clk             ;
+;  d_b[6]   ; clk        ; 4.109 ; 4.109 ; Rise       ; clk             ;
+; d_c[*]    ; clk        ; 4.009 ; 4.009 ; Rise       ; clk             ;
+;  d_c[0]   ; clk        ; 4.018 ; 4.018 ; Rise       ; clk             ;
+;  d_c[1]   ; clk        ; 4.015 ; 4.015 ; Rise       ; clk             ;
+;  d_c[2]   ; clk        ; 4.009 ; 4.009 ; Rise       ; clk             ;
+;  d_c[3]   ; clk        ; 4.035 ; 4.035 ; Rise       ; clk             ;
+;  d_c[4]   ; clk        ; 4.013 ; 4.013 ; Rise       ; clk             ;
+;  d_c[5]   ; clk        ; 4.123 ; 4.123 ; Rise       ; clk             ;
+;  d_c[6]   ; clk        ; 4.173 ; 4.173 ; Rise       ; clk             ;
+; d_d[*]    ; clk        ; 3.945 ; 3.945 ; Rise       ; clk             ;
+;  d_d[0]   ; clk        ; 4.106 ; 4.106 ; Rise       ; clk             ;
+;  d_d[1]   ; clk        ; 3.969 ; 3.969 ; Rise       ; clk             ;
+;  d_d[2]   ; clk        ; 3.956 ; 3.956 ; Rise       ; clk             ;
+;  d_d[3]   ; clk        ; 4.088 ; 4.088 ; Rise       ; clk             ;
+;  d_d[4]   ; clk        ; 3.947 ; 3.947 ; Rise       ; clk             ;
+;  d_d[5]   ; clk        ; 3.978 ; 3.978 ; Rise       ; clk             ;
+;  d_d[6]   ; clk        ; 3.945 ; 3.945 ; Rise       ; clk             ;
+; fin       ; clk        ; 3.625 ; 3.625 ; Rise       ; clk             ;
+; horno_on  ; clk        ; 3.861 ; 3.861 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 1697     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 1697     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 12    ; 12   ;
+; Unconstrained Input Port Paths  ; 80    ; 80   ;
+; Unconstrained Output Ports      ; 31    ; 31   ;
+; Unconstrained Output Port Paths ; 101   ; 101  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Apr 27 18:49:59 2021
+Info: Command: quartus_sta p11 -c p11
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'p11.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -4.356
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -4.356      -145.038 clk 
+Info (332146): Worst-case hold slack is 0.445
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.445         0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.631
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.631       -62.731 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.163
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.163       -31.464 clk 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -51.380 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4535 megabytes
+    Info: Processing ended: Tue Apr 27 18:50:01 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

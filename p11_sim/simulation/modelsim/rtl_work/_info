@@ -1,0 +1,264 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Joaquin Hijo\Desktop\ELECTRONICA DIGITAL\LAB\p11_sim\simulation\modelsim
+Econtadordescm10
+Z1 w1619494735
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\Joaquin Hijo\Desktop\ELECTRONICA DIGITAL\LAB\p11_sim\simulation\modelsim
+Z6 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM10.vhd
+Z7 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM10.vhd
+l0
+L4
+V^^IHWnJ8a3k3HPQXcE0aH1
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1619544842.272000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM10.vhd|
+Z11 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM10.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 4dCMK35=CLzFSW^BG>a1?1
+!i10b 1
+Abehavioural
+R2
+R3
+R4
+DEx4 work 15 contadordescm10 0 22 ^^IHWnJ8a3k3HPQXcE0aH1
+l20
+L16
+VII3;74CZA8BKRb_@cU]RG1
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 1P6L@fl;j1Vk@i7TTHd`a2
+!i10b 1
+Econtadordescm6
+Z14 w1619494665
+R4
+R3
+R2
+R5
+Z15 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM6.vhd
+Z16 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM6.vhd
+l0
+L5
+VYRUJ;J`;Di>GoQ4ngVG=C1
+R8
+31
+Z17 !s108 1619544842.509000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM6.vhd|
+Z19 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM6.vhd|
+R12
+R13
+!s100 UX1YFdk>B??8PKfdOkK_W2
+!i10b 1
+Abehavioural
+R4
+R3
+R2
+DEx4 work 14 contadordescm6 0 22 YRUJ;J`;Di>GoQ4ngVG=C1
+l21
+L17
+VkTNdIGMM>9B_IeCW74L9Z0
+R8
+31
+R17
+R18
+R19
+R12
+R13
+!s100 nTHk<KRPQ9:A:zTg7mJW`3
+!i10b 1
+Econtascm50
+Z20 w1619542732
+R2
+R3
+R4
+R5
+Z21 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContAscM50.vhd
+Z22 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContAscM50.vhd
+l0
+L5
+VXga;BGFDzAhJLI`zSljYd3
+R8
+31
+Z23 !s108 1619544842.030000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContAscM50.vhd|
+Z25 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContAscM50.vhd|
+R12
+R13
+!s100 _Gon_0`6>Knk:X2^HdbUC1
+!i10b 1
+Abehavioural
+R2
+R3
+R4
+DEx4 work 10 contascm50 0 22 Xga;BGFDzAhJLI`zSljYd3
+l19
+L15
+VDP<zMSR0T=mhLU1QP=^Za3
+R8
+31
+R23
+R24
+R25
+R12
+R13
+!s100 PCk<c7YDZejbB1@BhmW7@3
+!i10b 1
+Edatapath
+Z26 w1619542182
+R2
+R3
+R4
+R5
+Z27 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/datapath.vhd
+Z28 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/datapath.vhd
+l0
+L5
+V?`05g53_U=F=ZPK4`5_@53
+R8
+31
+Z29 !s108 1619544841.743000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/datapath.vhd|
+Z31 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/datapath.vhd|
+R12
+R13
+!s100 =4UCbfeGcZoRek;6PaYOf3
+!i10b 1
+Abehavioural
+R2
+R3
+R4
+DEx4 work 8 datapath 0 22 ?`05g53_U=F=ZPK4`5_@53
+l63
+L20
+ViT:=Z>zL<mW2LLSXcjNZa2
+R8
+31
+R29
+R30
+R31
+R12
+R13
+!s100 ONaHlPK1g6OHl;SBT^[mF2
+!i10b 1
+Emicroondas
+Z32 w1619541814
+R2
+R3
+R4
+R5
+Z33 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/Microondas.vhd
+Z34 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/Microondas.vhd
+l0
+L5
+VSh@0l<=7iON`U:LOJaUSU3
+R8
+31
+Z35 !s108 1619544841.432000
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/Microondas.vhd|
+Z37 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/Microondas.vhd|
+R12
+R13
+!s100 kPDVZ[l=6Xco98_8g[5A_0
+!i10b 1
+Abehavioural
+R2
+R3
+R4
+DEx4 work 10 microondas 0 22 Sh@0l<=7iON`U:LOJaUSU3
+l63
+L22
+V6[MLVj<P9e`hklA7FRe593
+R8
+31
+R35
+R36
+R37
+R12
+R13
+!s100 IbUKf`]EU3Wf[X0NIAgdX1
+!i10b 1
+Emicroondas_vhd_tst
+Z38 w1619544593
+R2
+R3
+R4
+R5
+Z39 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht
+Z40 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht
+l0
+L31
+VXGZ]6B1nH789nXLJZFI`H1
+!s100 KA2=W0QNCP]C_bCoge1Z?2
+R8
+31
+!i10b 1
+Z41 !s108 1619544842.740000
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht|
+Z43 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht|
+R12
+R13
+Amicroondas_arch
+R2
+R3
+R4
+DEx4 work 18 microondas_vhd_tst 0 22 XGZ]6B1nH789nXLJZFI`H1
+l64
+L33
+VgQfk^T:K2ZXak[GOZ40HV1
+!s100 kX[]@Z;e1<e;lVNgNVKg62
+R8
+31
+!i10b 1
+R41
+R42
+R43
+R12
+R13
+Eunidadcontrol
+Z44 w1619494858
+R2
+R3
+R4
+R5
+Z45 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/UnidadControl.vhd
+Z46 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/UnidadControl.vhd
+l0
+L5
+VTn`gdCKk8bn6UE`TlAfm<2
+R8
+31
+Z47 !s108 1619544841.267000
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/UnidadControl.vhd|
+Z49 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/UnidadControl.vhd|
+R12
+R13
+!s100 2d:<[cJ_m8KeMD[IKO5Lk1
+!i10b 1
+Abehavioural
+R2
+R3
+R4
+DEx4 work 13 unidadcontrol 0 22 Tn`gdCKk8bn6UE`TlAfm<2
+l28
+L23
+VXYFOPJeLB[ane9NZBnh370
+R8
+31
+R47
+R48
+R49
+R12
+R13
+!s100 _gK<;0NT5G9>KOnma9G4[2
+!i10b 1

@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ContAscM50 is
+
+10111110101111000010000000
+	port(
+		clk : in std_logic;
+		reset_n : in std_logic;
+		en : in std_logic;
+		co : out std_logic
+		);
+	end ContAscM50;
+	
+	architecture behavioural of ContAscM50 is
+	
+	signal contador : unsigned(25 downto 0);
+	
+	
+	
