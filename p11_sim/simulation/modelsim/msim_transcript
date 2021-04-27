@@ -10,7 +10,7 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/UnidadControl.vhd}
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/UnidadControl.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -18,7 +18,7 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity UnidadControl
 # -- Compiling architecture behavioural of UnidadControl
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/Microondas.vhd}
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/Microondas.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -26,7 +26,7 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Microondas
 # -- Compiling architecture behavioural of Microondas
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/datapath.vhd}
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/datapath.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -34,7 +34,7 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity datapath
 # -- Compiling architecture behavioural of datapath
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContAscM50.vhd}
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContAscM50.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -42,7 +42,7 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ContAscM50
 # -- Compiling architecture behavioural of ContAscM50
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM10.vhd}
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContadorDescM10.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -50,7 +50,7 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ContadorDescM10
 # -- Compiling architecture behavioural of ContadorDescM10
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM6.vhd}
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContadorDescM6.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -59,7 +59,7 @@
 # -- Compiling entity ContadorDescM6
 # -- Compiling architecture behavioural of ContadorDescM6
 # 
-# vcom -93 -work work {C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht}
+# vcom -93 -work work {C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -67,13 +67,13 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Microondas_vhd_tst
 # -- Compiling architecture Microondas_arch of Microondas_vhd_tst
-# ** Warning: [4] C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht(106): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht(108): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht(110): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht(112): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht(114): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht(116): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht(121): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht(106): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht(108): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht(110): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht(112): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht(114): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht(116): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht(121): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  microondas_vhd_tst
 # vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps microondas_vhd_tst 
@@ -115,5 +115,37 @@
 #    Time: 0 ps  Iteration: 1  Instance: /microondas_vhd_tst/i1/i2/contadorM10sec
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 1  Instance: /microondas_vhd_tst/i1/i2/contadorM50
-Break key hit 
-# Simulation stop requested.
+# ** Failure: fin de la simulacion
+#    Time: 26600 ns  Iteration: 0  Process: /microondas_vhd_tst/always File: C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht
+# Break in Process always at C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht line 125
+# Simulation Breakpoint: Break in Process always at C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht line 125
+# MACRO ./p11sim_run_msim_rtl_vhdl.do PAUSED at line 22
+add wave -position end  sim:/microondas_vhd_tst/i1/carga_mins
+add wave -position end  sim:/microondas_vhd_tst/i1/carga_secs
+run -all
+run -all
+restart
+run -all
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /microondas_vhd_tst/i1/i2/contadorM6min
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /microondas_vhd_tst/i1/i2/contadorM10min
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /microondas_vhd_tst/i1/i2/contadorM6seg
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /microondas_vhd_tst/i1/i2/contadorM10sec
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /microondas_vhd_tst/i1/i2/contadorM50
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /microondas_vhd_tst/i1/i2/contadorM6min
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /microondas_vhd_tst/i1/i2/contadorM10min
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /microondas_vhd_tst/i1/i2/contadorM6seg
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /microondas_vhd_tst/i1/i2/contadorM10sec
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /microondas_vhd_tst/i1/i2/contadorM50
+# ** Failure: fin de la simulacion
+#    Time: 26600 ns  Iteration: 0  Process: /microondas_vhd_tst/always File: C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht
+# Break in Process always at C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht line 125

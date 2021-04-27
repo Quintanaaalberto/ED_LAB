@@ -25,7 +25,7 @@ entity ContadorDescM10 is
 			
 				if reset_n = '0' then
 					contador <= "1001";
-				elsif clk'event and clk = '1' then
+				elsif clk' event and clk = '1' then
 					if carga = '1' then
 						contador <= unsigned(e_p);
 					elsif en = '1' then

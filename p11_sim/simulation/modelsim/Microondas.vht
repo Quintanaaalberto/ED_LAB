@@ -121,7 +121,7 @@ assert horno_on = '0'
 wait for 1000ns;
 puerta <= '0';
 
-assert fin = '0' 
+assert false 
 	report "fin de la simulacion"
 	severity failure;
 	
