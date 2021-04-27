@@ -24,7 +24,7 @@ entity ContAscM50 is
 				contador <=(others => '0');
 			elsif clk' event and clk = '1' then 
 				if en = '1' then
-					if contador = "00000000000000000000000101" then
+					if contador = "10111110101111000001111111" then --"00000000000000000000000101"
 						contador <= (others => '0');
 					else 
 						contador <= contador + 1;
@@ -33,7 +33,7 @@ entity ContAscM50 is
 			end if;
 		end process;
 		
-		co <= '1' when contador = "00000000000000000000000101" and en = '1'
+		co <= '1' when contador = "10111110101111000001111111" and en = '1'
 				else '0';
 				
 	end behavioural;

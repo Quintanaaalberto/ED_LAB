@@ -2,23 +2,23 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\quint\OneDrive\Documents\ICAI\ICAI_ElectronicaDigital\GitHub\ED_LAB\p11_sim\simulation\modelsim
+Z0 dC:\Users\Joaquin Hijo\Desktop\ELECTRONICA DIGITAL\LAB\p11_sim\simulation\modelsim
 Econtadordescm10
-Z1 w1619545112
+Z1 w1619494735
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z5 dC:\Users\quint\OneDrive\Documents\ICAI\ICAI_ElectronicaDigital\GitHub\ED_LAB\p11_sim\simulation\modelsim
-Z6 8C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContadorDescM10.vhd
-Z7 FC:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContadorDescM10.vhd
+Z5 dC:\Users\Joaquin Hijo\Desktop\ELECTRONICA DIGITAL\LAB\p11_sim\simulation\modelsim
+Z6 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM10.vhd
+Z7 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM10.vhd
 l0
 L4
 V^^IHWnJ8a3k3HPQXcE0aH1
 Z8 OV;C;10.1d;51
 31
-Z9 !s108 1619546117.189000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContadorDescM10.vhd|
-Z11 !s107 C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContadorDescM10.vhd|
+Z9 !s108 1619550675.195000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM10.vhd|
+Z11 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM10.vhd|
 Z12 o-93 -work work -O0
 Z13 tExplicit 1
 !s100 4dCMK35=CLzFSW^BG>a1?1
@@ -41,21 +41,21 @@ R13
 !s100 1P6L@fl;j1Vk@i7TTHd`a2
 !i10b 1
 Econtadordescm6
-R1
+Z14 w1619494665
 R4
 R3
 R2
 R5
-Z14 8C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContadorDescM6.vhd
-Z15 FC:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContadorDescM6.vhd
+Z15 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM6.vhd
+Z16 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM6.vhd
 l0
 L5
 VYRUJ;J`;Di>GoQ4ngVG=C1
 R8
 31
-Z16 !s108 1619546117.336000
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContadorDescM6.vhd|
-Z18 !s107 C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContadorDescM6.vhd|
+Z17 !s108 1619550675.547000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM6.vhd|
+Z19 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContadorDescM6.vhd|
 R12
 R13
 !s100 UX1YFdk>B??8PKfdOkK_W2
@@ -70,29 +70,29 @@ L17
 VkTNdIGMM>9B_IeCW74L9Z0
 R8
 31
-R16
 R17
 R18
+R19
 R12
 R13
 !s100 nTHk<KRPQ9:A:zTg7mJW`3
 !i10b 1
 Econtascm50
-R1
+Z20 w1619542732
 R2
 R3
 R4
 R5
-Z19 8C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContAscM50.vhd
-Z20 FC:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContAscM50.vhd
+Z21 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContAscM50.vhd
+Z22 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContAscM50.vhd
 l0
 L5
 VXga;BGFDzAhJLI`zSljYd3
 R8
 31
-Z21 !s108 1619546117.038000
-Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContAscM50.vhd|
-Z23 !s107 C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/ContAscM50.vhd|
+Z23 !s108 1619550675.012000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContAscM50.vhd|
+Z25 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/ContAscM50.vhd|
 R12
 R13
 !s100 _Gon_0`6>Knk:X2^HdbUC1
@@ -107,29 +107,29 @@ L15
 VDP<zMSR0T=mhLU1QP=^Za3
 R8
 31
-R21
-R22
 R23
+R24
+R25
 R12
 R13
 !s100 PCk<c7YDZejbB1@BhmW7@3
 !i10b 1
 Edatapath
-R1
+Z26 w1619542182
 R2
 R3
 R4
 R5
-Z24 8C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/datapath.vhd
-Z25 FC:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/datapath.vhd
+Z27 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/datapath.vhd
+Z28 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/datapath.vhd
 l0
 L5
 V?`05g53_U=F=ZPK4`5_@53
 R8
 31
-Z26 !s108 1619546116.867000
-Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/datapath.vhd|
-Z28 !s107 C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/datapath.vhd|
+Z29 !s108 1619550674.842000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/datapath.vhd|
+Z31 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/datapath.vhd|
 R12
 R13
 !s100 =4UCbfeGcZoRek;6PaYOf3
@@ -144,29 +144,29 @@ L20
 ViT:=Z>zL<mW2LLSXcjNZa2
 R8
 31
-R26
-R27
-R28
+R29
+R30
+R31
 R12
 R13
 !s100 ONaHlPK1g6OHl;SBT^[mF2
 !i10b 1
 Emicroondas
-R1
+Z32 w1619541814
 R2
 R3
 R4
 R5
-Z29 8C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/Microondas.vhd
-Z30 FC:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/Microondas.vhd
+Z33 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/Microondas.vhd
+Z34 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/Microondas.vhd
 l0
 L5
 VSh@0l<=7iON`U:LOJaUSU3
 R8
 31
-Z31 !s108 1619546116.725000
-Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/Microondas.vhd|
-Z33 !s107 C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/Microondas.vhd|
+Z35 !s108 1619550674.663000
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/Microondas.vhd|
+Z37 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/Microondas.vhd|
 R12
 R13
 !s100 kPDVZ[l=6Xco98_8g[5A_0
@@ -181,21 +181,21 @@ L22
 V6[MLVj<P9e`hklA7FRe593
 R8
 31
-R31
-R32
-R33
+R35
+R36
+R37
 R12
 R13
 !s100 IbUKf`]EU3Wf[X0NIAgdX1
 !i10b 1
 Emicroondas_vhd_tst
-Z34 w1619546103
+Z38 w1619550541
 R2
 R3
 R4
 R5
-Z35 8C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht
-Z36 FC:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht
+Z39 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht
+Z40 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht
 l0
 L31
 VXGZ]6B1nH789nXLJZFI`H1
@@ -203,44 +203,44 @@ VXGZ]6B1nH789nXLJZFI`H1
 R8
 31
 !i10b 1
-Z37 !s108 1619546117.547000
-Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht|
-Z39 !s107 C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/simulation/modelsim/Microondas.vht|
+Z41 !s108 1619550703.143000
+Z42 !s90 -reportprogress|300|-93|-work|work|-O0|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht|
+Z43 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/simulation/modelsim/Microondas.vht|
 R12
 R13
 Amicroondas_arch
 R2
 R3
 R4
-DEx4 work 18 microondas_vhd_tst 0 22 XGZ]6B1nH789nXLJZFI`H1
+Z44 DEx4 work 18 microondas_vhd_tst 0 22 XGZ]6B1nH789nXLJZFI`H1
 l64
 L33
-V>IR<[EC]2Q_COdkJ:MB[a3
-!s100 k9CCI<jOb<]MfIzln51OX0
+Z45 V<?Dh3OjeWcDC;Gc@U<c<32
+Z46 !s100 P_EN=RZgDEDd=QBCZT_X52
 R8
 31
 !i10b 1
-R37
-R38
-R39
+R41
+R42
+R43
 R12
 R13
 Eunidadcontrol
-R1
+Z47 w1619550621
 R2
 R3
 R4
 R5
-Z40 8C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/UnidadControl.vhd
-Z41 FC:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/UnidadControl.vhd
+Z48 8C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/UnidadControl.vhd
+Z49 FC:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/UnidadControl.vhd
 l0
 L5
 VTn`gdCKk8bn6UE`TlAfm<2
 R8
 31
-Z42 !s108 1619546116.558000
-Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/UnidadControl.vhd|
-Z44 !s107 C:/Users/quint/OneDrive/Documents/ICAI/ICAI_ElectronicaDigital/GitHub/ED_LAB/p11_sim/UnidadControl.vhd|
+Z50 !s108 1619550674.465000
+Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/UnidadControl.vhd|
+Z52 !s107 C:/Users/Joaquin Hijo/Desktop/ELECTRONICA DIGITAL/LAB/p11_sim/UnidadControl.vhd|
 R12
 R13
 !s100 2d:<[cJ_m8KeMD[IKO5Lk1
@@ -252,13 +252,13 @@ R4
 DEx4 work 13 unidadcontrol 0 22 Tn`gdCKk8bn6UE`TlAfm<2
 l28
 L23
-VXYFOPJeLB[ane9NZBnh370
+VEAodceOTKUo@0Z3@9Hg[T1
 R8
 31
-R42
-R43
-R44
+R50
+R51
+R52
 R12
 R13
-!s100 _gK<;0NT5G9>KOnma9G4[2
+!s100 WTalk2a1z:ezn_]=L7J]Q0
 !i10b 1

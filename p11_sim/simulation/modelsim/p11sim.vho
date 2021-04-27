@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "04/27/2021 19:31:33"
+-- DATE "04/27/2021 19:43:13"
 
 -- 
 -- Device: Altera EP2C20F484C7 Package FBGA484
@@ -229,12 +229,12 @@ SIGNAL \i2|contadorM10sec|Add0~1_combout\ : std_logic;
 SIGNAL \i2|contadorM10sec|contador~3_combout\ : std_logic;
 SIGNAL \i2|contadorM6seg|contador~4_combout\ : std_logic;
 SIGNAL \i2|contadorM6seg|contador~5_combout\ : std_logic;
-SIGNAL \i2|contadorM6min|contador\ : std_logic_vector(2 DOWNTO 0);
-SIGNAL \i2|contadorM10min|contador\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \i2|contadorM50|contador\ : std_logic_vector(25 DOWNTO 0);
 SIGNAL \i2|contadorM10sec|contador\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \i2|contadorM6seg|contador\ : std_logic_vector(2 DOWNTO 0);
 SIGNAL \ent_p~combout\ : std_logic_vector(6 DOWNTO 0);
+SIGNAL \i2|contadorM6min|contador\ : std_logic_vector(2 DOWNTO 0);
+SIGNAL \i2|contadorM10min|contador\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \ALT_INV_reset_n~clkctrl_outclk\ : std_logic;
 SIGNAL \i2|contadorM6seg|ALT_INV_contador\ : std_logic_vector(2 DOWNTO 1);
 SIGNAL \i2|contadorM10sec|ALT_INV_contador\ : std_logic_vector(3 DOWNTO 0);

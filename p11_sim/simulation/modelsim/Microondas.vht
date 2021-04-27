@@ -104,13 +104,18 @@ p2 <= '0';
 puerta <= '0';
 
 wait for 120ns;
+reset_n <= '1';
+ent_p <= "0010001";
+wait for 120ns;
+p1 <= '1';
+wait for 120ns;
+p1<= '0';
+wait for 120ns;
 ent_p <= "0000001";
 wait for 120ns;
 p2 <= '1';
 wait for 120ns;
-ent_p <= "0010001";
-wait for 120ns;
-p1 <= '1';
+p2 <= '0';
 wait for 120ns;
 enc_temp <= '1';
 wait for 25000ns;
@@ -120,8 +125,13 @@ assert horno_on = '0'
 	severity warning;
 wait for 1000ns;
 puerta <= '0';
-
-assert false 
+wait for 25000ns;
+puerta <= '1';
+wait for 500ns;
+puerta <= '0';
+enc_temp <= '0';
+wait for 120ns;
+assert false
 	report "fin de la simulacion"
 	severity failure;
 	
